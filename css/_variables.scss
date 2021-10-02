@@ -1,0 +1,25 @@
+:root {
+   /** Theme State */
+   --is-dark-mode: 1;
+
+   /** Colors */
+   --color-primary-hex: #301934;
+   --color-accent-hex: #ffffff;
+   --color-primary-rgb: 48, 25, 52;
+   --color-accent-rgb: 255, 255, 255;
+
+   /** Fonts */
+   --font-family: "Quicksand", sans-serif;
+   --font-weight: normal;
+
+   /** Transitions */
+   --slow-transition: 300ms ease;
+   --medium-transition: 250ms ease;
+   --fast-transition: 200ms ease;
+
+   /** Opacities */
+   --low-opacity: 0.4;
+   --medium-opacity: 0.6;
+   --high-opacity: 0.8;
+   --full-opacity: 1;
+}
