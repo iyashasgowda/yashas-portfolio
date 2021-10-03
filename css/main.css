@@ -23,7 +23,7 @@
 
 html,
 body {
-  height: 300vh;
+  height: auto;
   width: 100vw;
   margin: 0;
   padding: 0;
@@ -66,6 +66,8 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-backdrop-filter: blur(0.6em);
+          backdrop-filter: blur(0.6em);
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -100,7 +102,7 @@ header div ul {
 
 header div ul li {
   margin: 1.2em;
-  font-size: 0.95em;
+  font-size: 1em;
   list-style: none;
   -webkit-transition: var(--fast-transition);
   transition: var(--fast-transition);
@@ -128,8 +130,8 @@ header img:nth-child(2):hover {
 }
 
 main {
+  height: auto;
   width: 100%;
-  height: 100%;
 }
 
 main div:nth-child(2) {
@@ -231,7 +233,7 @@ main div:nth-child(3)::after {
 }
 
 main div:nth-child(1) {
-  height: 100%;
+  height: auto;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -239,8 +241,65 @@ main div:nth-child(1) {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section {
+  height: 100vh;
+  width: 85%;
+}
+
+section:nth-child(1) div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 100%;
+  width: 100%;
+}
+
+section:nth-child(1) div div {
+  width: 48%;
+  height: auto;
+  margin: 26em 2em 0 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: rgba(var(--color-accent-rgb), var(--medium-opacity));
+}
+
+section:nth-child(1) div div span {
+  color: rgba(var(--color-accent-rgb), var(--full-opacity));
+}
+
+section:nth-child(1) div div h1 {
+  margin-bottom: 0em;
+  font-size: 4em;
+  line-height: 1em;
+}
+
+section:nth-child(1) div div p {
+  margin-top: 0.5em;
+  font-size: 2em;
+  line-height: 1.2em;
+}
+
+section:nth-child(1) div img {
+  width: 32%;
+  height: auto;
+  margin: 10em 4em 0 0;
 }
 /*# sourceMappingURL=main.css.map */
