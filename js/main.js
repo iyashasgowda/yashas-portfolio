@@ -47,16 +47,16 @@ $("#dark-mode-btn").click(function () {
       root.style.setProperty("--is-dark-mode", 1);
 
       /** colors */
-      root.style.setProperty("--color-primary-hex", "#ffffff");
+      root.style.setProperty("--color-primary-hex", "#eceff1");
       root.style.setProperty("--color-accent-hex", "#301934");
-      root.style.setProperty("--color-primary-rgb", "255, 255, 255");
+      root.style.setProperty("--color-primary-rgb", "236, 239, 241");
       root.style.setProperty("--color-accent-rgb", "48, 25, 52");
 
       /** font */
       root.style.setProperty("--font-weight", "900");
 
       /** opacities */
-      root.style.setProperty("--medium-opacity", "1");
+      root.style.setProperty("--medium-opacity", "0.8");
 
       /** assets */
       $("#dark-mode-btn").attr("src", "assets/icons/light/dark_mode.svg");
@@ -71,9 +71,9 @@ $("#dark-mode-btn").click(function () {
 
       /** colors */
       root.style.setProperty("--color-primary-hex", "#301934");
-      root.style.setProperty("--color-accent-hex", "#ffffff");
+      root.style.setProperty("--color-accent-hex", "#eceff1");
       root.style.setProperty("--color-primary-rgb", "48, 25, 52");
-      root.style.setProperty("--color-accent-rgb", "255, 255, 255");
+      root.style.setProperty("--color-accent-rgb", "236, 239, 241");
 
       /** font */
       root.style.setProperty("--font-weight", "normal");
