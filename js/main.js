@@ -7,6 +7,7 @@ const instagram = "https://instagram.com/iyashasgowda";
 const github = "https://github.com/iyashasgowda";
 
 let root = document.documentElement;
+let is_dark_mode = root.style.getPropertyValue("--is-dark-mode");
 
 /** Hide header on scroll */
 var previous = window.pageYOffset;
@@ -40,9 +41,6 @@ window.onscroll = function () {
 
 /** Changing theme */
 $("#dark-mode-btn").click(function () {
-   let is_dark_mode = root.style.getPropertyValue("--is-dark-mode");
-   console.log(is_dark_mode);
-
    if (is_dark_mode == 0) {
       root.style.setProperty("--is-dark-mode", 1);
 
@@ -66,6 +64,7 @@ $("#dark-mode-btn").click(function () {
       $("#twitter").attr("src", "assets/icons/light/twitter.svg");
       $("#instagram").attr("src", "assets/icons/light/instagram.svg");
       $("#facebook").attr("src", "assets/icons/light/facebook.svg");
+      $("#avatar").attr("src", "assets/images/avatar_black.png");
    } else {
       root.style.setProperty("--is-dark-mode", 0);
 
@@ -89,7 +88,10 @@ $("#dark-mode-btn").click(function () {
       $("#twitter").attr("src", "assets/icons/dark/twitter.svg");
       $("#instagram").attr("src", "assets/icons/dark/instagram.svg");
       $("#facebook").attr("src", "assets/icons/dark/facebook.svg");
+      $("#avatar").attr("src", "assets/images/avatar_white.png");
    }
+
+   is_dark_mode = root.style.getPropertyValue("--is-dark-mode");
 });
 
 /** Social accounts */
@@ -116,3 +118,14 @@ $("#github").click(function () {
 $("#email").click(function () {
    window.open("mailto:" + email);
 });
+
+function icon_hover() {
+   if (is_dark_mode == 0)
+      $("#logo").attr("src", "assets/icons/dark/logo_filled.png");
+   else $("#logo").attr("src", "assets/icons/light/logo_filled.png");
+}
+
+function icon_unhover() {
+   if (is_dark_mode == 0) $("#logo").attr("src", "assets/icons/dark/logo.svg");
+   else $("#logo").attr("src", "assets/icons/light/logo.svg");
+}

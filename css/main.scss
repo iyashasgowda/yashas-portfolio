@@ -51,6 +51,7 @@ header {
    img:nth-child(1) {
       cursor: pointer;
       margin-left: 3.2em;
+      transition: var(--slow-transition);
    }
 
    div {
@@ -245,6 +246,14 @@ section:nth-child(1) {
          width: 32%;
          height: auto;
          margin: 10em 4em 0 0;
+         transition: var(--fast-transition);
+         filter: var(--drop-shadow);
+
+         &:hover {
+            cursor: pointer;
+            transform: scale(0.95);
+            filter: var(--drop-shadow-hover);
+         }
       }
    }
 }

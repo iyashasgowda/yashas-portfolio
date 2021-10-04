@@ -19,6 +19,9 @@
   --medium-opacity: 0.6;
   --high-opacity: 0.8;
   --full-opacity: 1;
+  /** Box Shadows */
+  --drop-shadow: drop-shadow(0 6px 3px rgba(0, 0, 0, var(--medium-opacity)));
+  --drop-shadow-hover: drop-shadow(0 0 0 rgba(black, 0));
 }
 
 html,
@@ -79,6 +82,8 @@ header {
 header img:nth-child(1) {
   cursor: pointer;
   margin-left: 3.2em;
+  -webkit-transition: var(--slow-transition);
+  transition: var(--slow-transition);
 }
 
 header div {
@@ -301,5 +306,17 @@ section:nth-child(1) div img {
   width: 32%;
   height: auto;
   margin: 10em 4em 0 0;
+  -webkit-transition: var(--fast-transition);
+  transition: var(--fast-transition);
+  -webkit-filter: var(--drop-shadow);
+          filter: var(--drop-shadow);
+}
+
+section:nth-child(1) div img:hover {
+  cursor: pointer;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  -webkit-filter: var(--drop-shadow-hover);
+          filter: var(--drop-shadow-hover);
 }
 /*# sourceMappingURL=main.css.map */
