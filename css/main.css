@@ -24,6 +24,110 @@
   --drop-shadow-hover: drop-shadow(0 0 0 rgba(black, 0));
 }
 
+@-webkit-keyframes text-anim {
+  0% {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes text-anim {
+  0% {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes avatar-anim {
+  0% {
+    -webkit-transform: translateY(25%) scale(0.5);
+            transform: translateY(25%) scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scale(1);
+            transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes avatar-anim {
+  0% {
+    -webkit-transform: translateY(25%) scale(0.5);
+            transform: translateY(25%) scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scale(1);
+            transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes nav-anim {
+  0% {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes nav-anim {
+  0% {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes menu-anim {
+  0% {
+    -webkit-transform: translateX(25%);
+            transform: translateX(25%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes menu-anim {
+  0% {
+    -webkit-transform: translateX(25%);
+            transform: translateX(25%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 html,
 body {
   height: auto;
@@ -103,6 +207,8 @@ header div ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-animation: 0.3s ease 0s 1 menu-anim;
+          animation: 0.3s ease 0s 1 menu-anim;
 }
 
 header div ul li {
@@ -154,6 +260,10 @@ main div:nth-child(2) {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: var(--slow-transition);
+  transition: var(--slow-transition);
+  -webkit-animation: 500ms ease-in-out 0s 1 nav-anim;
+          animation: 500ms ease-in-out 0s 1 nav-anim;
 }
 
 main div:nth-child(2) ul {
@@ -206,6 +316,10 @@ main div:nth-child(3) {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-transition: var(--slow-transition);
+  transition: var(--slow-transition);
+  -webkit-animation: 500ms ease-in-out 0s 1 nav-anim;
+          animation: 500ms ease-in-out 0s 1 nav-anim;
 }
 
 main div:nth-child(3) p {
@@ -291,25 +405,31 @@ section:nth-child(1) div div span {
 }
 
 section:nth-child(1) div div h1 {
-  margin-bottom: 0em;
   font-size: 4em;
   line-height: 1em;
+  margin-bottom: 0em;
+  -webkit-animation: 0.3s ease 0s 1 text-anim;
+          animation: 0.3s ease 0s 1 text-anim;
 }
 
 section:nth-child(1) div div p {
-  margin-top: 0.5em;
   font-size: 2em;
   line-height: 1.2em;
+  margin-top: 0.5em;
+  -webkit-animation: 0.4s ease 0s 1 text-anim;
+          animation: 0.4s ease 0s 1 text-anim;
 }
 
 section:nth-child(1) div img {
   width: 32%;
   height: auto;
   margin: 10em 4em 0 0;
-  -webkit-transition: var(--fast-transition);
-  transition: var(--fast-transition);
   -webkit-filter: var(--drop-shadow);
           filter: var(--drop-shadow);
+  -webkit-transition: var(--fast-transition);
+  transition: var(--fast-transition);
+  -webkit-animation: 0.3s ease-out 0s 1 avatar-anim;
+          animation: 0.3s ease-out 0s 1 avatar-anim;
 }
 
 section:nth-child(1) div img:hover {

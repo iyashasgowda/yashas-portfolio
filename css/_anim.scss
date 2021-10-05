@@ -1,0 +1,43 @@
+@keyframes text-anim {
+   0% {
+      transform: translateY(50%);
+      opacity: 0;
+   }
+   100% {
+      transform: translateY(0);
+      opacity: 1;
+   }
+}
+
+@keyframes avatar-anim {
+   0% {
+      transform: translateY(25%) scale(0.5);
+      opacity: 0;
+   }
+   100% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+   }
+}
+
+@keyframes nav-anim {
+   0% {
+      transform: translateY(50%);
+      opacity: 0;
+   }
+   100% {
+      transform: translateY(0);
+      opacity: 1;
+   }
+}
+
+@keyframes menu-anim {
+   0% {
+      transform: translateX(25%);
+      opacity: 0;
+   }
+   100% {
+      transform: translateY(0);
+      opacity: 1;
+   }
+}

@@ -1,5 +1,6 @@
 @import "./variables";
 @import "./mixin";
+@import "./anim";
 
 html,
 body {
@@ -62,6 +63,7 @@ header {
       ul {
          display: flex;
          align-items: center;
+         animation: 0.3s ease 0s 1 menu-anim;
 
          li {
             margin: 1.2em;
@@ -111,6 +113,8 @@ main {
       display: flex;
       align-items: flex-end;
       justify-content: center;
+      transition: var(--slow-transition);
+      animation: 500ms ease-in-out 0s 1 nav-anim;
 
       ul {
          margin: 0;
@@ -155,6 +159,8 @@ main {
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-end;
+      transition: var(--slow-transition);
+      animation: 500ms ease-in-out 0s 1 nav-anim;
 
       p {
          margin-top: 1.5em;
@@ -231,14 +237,16 @@ section:nth-child(1) {
             );
          }
          h1 {
-            margin-bottom: 0em;
             font-size: 4em;
             line-height: 1em;
+            margin-bottom: 0em;
+            animation: 0.3s ease 0s 1 text-anim;
          }
          p {
-            margin-top: 0.5em;
             font-size: 2em;
             line-height: 1.2em;
+            margin-top: 0.5em;
+            animation: 0.4s ease 0s 1 text-anim;
          }
       }
 
@@ -246,8 +254,9 @@ section:nth-child(1) {
          width: 32%;
          height: auto;
          margin: 10em 4em 0 0;
-         transition: var(--fast-transition);
          filter: var(--drop-shadow);
+         transition: var(--fast-transition);
+         animation: 0.3s ease-out 0s 1 avatar-anim;
 
          &:hover {
             cursor: pointer;
