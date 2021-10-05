@@ -119,6 +119,29 @@ $("#email").click(function () {
    window.open("mailto:" + email);
 });
 
+/** Navigation */
+$("#about").click(function () {
+   document.getElementById("about-section").scrollIntoView();
+});
+
+$("#skills").click(function () {
+   document.getElementById("skills-section").scrollIntoView();
+});
+
+$("#work").click(function () {
+   document.getElementById("work-section").scrollIntoView();
+});
+
+$("#contact").click(function () {
+   document.getElementById("contact-section").scrollIntoView();
+});
+
+/** Download Resume */
+$("#resume").click(function () {
+   window.open("resume.pdf", "_blank");
+});
+
+/** Icon anim */
 function icon_hover() {
    if (is_dark_mode == 0)
       $("#logo").attr("src", "assets/icons/dark/logo_filled.png");

@@ -222,7 +222,7 @@ section:nth-child(1) {
       div {
          width: 48%;
          height: auto;
-         margin: 26em 2em 0 0;
+         margin: 20em 2em 0 0;
          flex-direction: column;
 
          color: rgba(
@@ -230,30 +230,69 @@ section:nth-child(1) {
             $alpha: var(--medium-opacity)
          );
 
-         span {
+         p:nth-child(1) {
+            font-size: 1.5em;
+            animation: 0.3s ease 0s 1 text-anim;
+         }
+
+         h1 {
+            margin: 0em;
+            margin-top: 0.1em;
+            font-size: 5em;
+            line-height: 1em;
+            animation: 0.4s ease 0s 1 text-anim;
             color: rgba(
                $color: var(--color-accent-rgb),
                $alpha: var(--full-opacity)
             );
          }
-         h1 {
-            font-size: 4em;
-            line-height: 1em;
-            margin-bottom: 0em;
-            animation: 0.3s ease 0s 1 text-anim;
-         }
-         p {
-            font-size: 2em;
+
+         p:nth-of-type(2) {
+            margin: 0;
+            margin-top: 0.6em;
+            font-size: 2.5em;
             line-height: 1.2em;
-            margin-top: 0.5em;
-            animation: 0.4s ease 0s 1 text-anim;
+            animation: 0.5s ease 0s 1 text-anim;
+         }
+
+         button {
+            font-size: 1.2em;
+            font-family: var(--font-family);
+            color: rgba(
+               $color: var(--color-accent-rgb),
+               $alpha: var(--medium-opacity)
+            );
+
+            margin-top: 1.4em;
+            letter-spacing: 0.04em;
+            padding: 0.6em 0.8em 0.5em 0.8em;
+
+            border-radius: 0.4em;
+            background-color: transparent;
+            border: 0.1em solid
+               rgba(
+                  $color: var(--color-accent-rgb),
+                  $alpha: var(--medium-opacity)
+               );
+
+            animation: 0.6s ease 0s 1 text-anim;
+            transition: var(--medium-transition);
+
+            &:hover {
+               cursor: pointer;
+               transform: scale(0.95);
+               background-color: rgba(
+                  $color: var(--color-accent-rgb),
+                  $alpha: var(--low-opacity)
+               );
+            }
          }
       }
 
       img {
          width: 32%;
          height: auto;
-         margin: 10em 4em 0 0;
+         margin: 12em 4em 0 0;
          filter: var(--drop-shadow);
          transition: var(--fast-transition);
          animation: 0.3s ease-out 0s 1 avatar-anim;
@@ -265,4 +304,20 @@ section:nth-child(1) {
          }
       }
    }
+}
+
+section:nth-child(2) {
+   background-color: lightseagreen;
+}
+
+section:nth-child(3) {
+   background-color: lightsalmon;
+}
+
+section:nth-child(4) {
+   background-color: lightyellow;
+}
+
+section:nth-child(5) {
+   background-color: lightpink;
 }
