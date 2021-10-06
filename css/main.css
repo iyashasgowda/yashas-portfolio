@@ -245,7 +245,7 @@ main {
   width: 100%;
 }
 
-main div:nth-child(2) {
+main .social-content {
   left: 0;
   bottom: 0;
   width: 5em;
@@ -266,29 +266,29 @@ main div:nth-child(2) {
           animation: 500ms ease-in-out 0s 1 nav-anim;
 }
 
-main div:nth-child(2) ul {
+main .social-content ul {
   margin: 0;
   list-style: none;
 }
 
-main div:nth-child(2) ul li {
+main .social-content ul li {
   margin: 1.5em 1.5em;
 }
 
-main div:nth-child(2) ul li img {
+main .social-content ul li img {
   opacity: var(--medium-opacity);
   -webkit-transition: var(--fast-transition);
   transition: var(--fast-transition);
 }
 
-main div:nth-child(2) ul li img:hover {
+main .social-content ul li img:hover {
   cursor: pointer;
   opacity: 1;
   -webkit-transform: translateY(-0.2em) scale(1.2);
           transform: translateY(-0.2em) scale(1.2);
 }
 
-main div:nth-child(2) ul::after {
+main .social-content ul::after {
   content: "";
   display: block;
   width: 1px;
@@ -297,7 +297,7 @@ main div:nth-child(2) ul::after {
   background-color: rgba(var(--color-accent-rgb), var(--medium-opacity));
 }
 
-main div:nth-child(3) {
+main .email-content {
   right: 0;
   bottom: 0;
   width: 5em;
@@ -322,7 +322,7 @@ main div:nth-child(3) {
           animation: 500ms ease-in-out 0s 1 nav-anim;
 }
 
-main div:nth-child(3) p {
+main .email-content p {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
   font-size: 1.1em;
@@ -334,7 +334,7 @@ main div:nth-child(3) p {
   transition: var(--fast-transition);
 }
 
-main div:nth-child(3) p:hover {
+main .email-content p:hover {
   cursor: pointer;
   -webkit-transform: translateY(-0.3em);
           transform: translateY(-0.3em);
@@ -342,7 +342,7 @@ main div:nth-child(3) p:hover {
   font-weight: var(--font-weight);
 }
 
-main div:nth-child(3)::after {
+main .email-content::after {
   content: "";
   display: block;
   width: 1px;
@@ -351,7 +351,7 @@ main div:nth-child(3)::after {
   background-color: rgba(var(--color-accent-rgb), var(--medium-opacity));
 }
 
-main div:nth-child(1) {
+main .main-content {
   height: auto;
   width: 100%;
   display: -webkit-box;
@@ -409,7 +409,7 @@ section:nth-child(1) div div p:nth-child(1) {
 section:nth-child(1) div div h1 {
   margin: 0em;
   margin-top: 0.1em;
-  font-size: 5em;
+  font-size: 4.5em;
   line-height: 1em;
   -webkit-animation: 0.4s ease 0s 1 text-anim;
           animation: 0.4s ease 0s 1 text-anim;
@@ -419,7 +419,7 @@ section:nth-child(1) div div h1 {
 section:nth-child(1) div div p:nth-of-type(2) {
   margin: 0;
   margin-top: 0.6em;
-  font-size: 2.5em;
+  font-size: 2.4em;
   line-height: 1.2em;
   -webkit-animation: 0.5s ease 0s 1 text-anim;
           animation: 0.5s ease 0s 1 text-anim;
@@ -445,7 +445,8 @@ section:nth-child(1) div div button:hover {
   cursor: pointer;
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
-  background-color: rgba(var(--color-accent-rgb), var(--low-opacity));
+  color: var(--color-primary-hex);
+  background-color: var(--color-accent-hex);
 }
 
 section:nth-child(1) div img {
@@ -468,8 +469,55 @@ section:nth-child(1) div img:hover {
           filter: var(--drop-shadow-hover);
 }
 
-section:nth-child(2) {
-  background-color: lightseagreen;
+section:nth-of-type(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+section:nth-of-type(2) .about-title {
+  height: auto;
+  width: 70%;
+  margin-top: 3em;
+}
+
+section:nth-of-type(2) .about-title h2 {
+  font-size: 2em;
+  color: rgba(var(--color-accent-rgb), var(--high-opacity));
+}
+
+section:nth-of-type(2) .about-title h2::after {
+  height: 1px;
+  width: 8em;
+  content: "";
+  margin: 0.6em;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: rgba(var(--color-accent-rgb), var(--medium-opacity));
+}
+
+section:nth-of-type(2) .about-body {
+  height: 100%;
+  width: 70%;
+  margin-top: 0em;
+}
+
+section:nth-of-type(2) .about-body p {
+  font-size: 1.4em;
+  color: rgba(var(--color-accent-rgb), var(--medium-opacity));
 }
 
 section:nth-child(3) {

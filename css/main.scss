@@ -103,7 +103,7 @@ main {
    height: auto;
    width: 100%;
 
-   div:nth-child(2) {
+   .social-content {
       left: 0;
       bottom: 0;
       width: 5em;
@@ -148,7 +148,7 @@ main {
       }
    }
 
-   div:nth-child(3) {
+   .email-content {
       right: 0;
       bottom: 0;
       width: 5em;
@@ -194,7 +194,7 @@ main {
       }
    }
 
-   div:nth-child(1) {
+   .main-content {
       height: auto;
       width: 100%;
 
@@ -238,7 +238,7 @@ section:nth-child(1) {
          h1 {
             margin: 0em;
             margin-top: 0.1em;
-            font-size: 5em;
+            font-size: 4.5em;
             line-height: 1em;
             animation: 0.4s ease 0s 1 text-anim;
             color: rgba(
@@ -250,7 +250,7 @@ section:nth-child(1) {
          p:nth-of-type(2) {
             margin: 0;
             margin-top: 0.6em;
-            font-size: 2.5em;
+            font-size: 2.4em;
             line-height: 1.2em;
             animation: 0.5s ease 0s 1 text-anim;
          }
@@ -281,10 +281,8 @@ section:nth-child(1) {
             &:hover {
                cursor: pointer;
                transform: scale(0.95);
-               background-color: rgba(
-                  $color: var(--color-accent-rgb),
-                  $alpha: var(--low-opacity)
-               );
+               color: var(--color-primary-hex);
+               background-color: var(--color-accent-hex);
             }
          }
       }
@@ -306,8 +304,52 @@ section:nth-child(1) {
    }
 }
 
-section:nth-child(2) {
-   background-color: lightseagreen;
+section:nth-of-type(2) {
+   @include centerItems();
+   flex-direction: column;
+   justify-content: flex-start;
+
+   .about-title {
+      height: auto;
+      width: 70%;
+      margin-top: 3em;
+
+      h2 {
+         font-size: 2em;
+         color: rgba(
+            $color: var(--color-accent-rgb),
+            $alpha: var(--high-opacity)
+         );
+      }
+
+      h2::after {
+         height: 1px;
+         width: 8em;
+
+         content: "";
+         margin: 0.6em;
+         display: inline-block;
+         vertical-align: middle;
+         background-color: rgba(
+            $color: var(--color-accent-rgb),
+            $alpha: var(--medium-opacity)
+         );
+      }
+   }
+
+   .about-body {
+      height: 100%;
+      width: 70%;
+      margin-top: 0em;
+
+      p {
+         font-size: 1.4em;
+         color: rgba(
+            $color: var(--color-accent-rgb),
+            $alpha: var(--medium-opacity)
+         );
+      }
+   }
 }
 
 section:nth-child(3) {
