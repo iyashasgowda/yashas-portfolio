@@ -152,3 +152,12 @@ function icon_unhover() {
    if (is_dark_mode == 0) $("#logo").attr("src", "assets/icons/dark/logo.svg");
    else $("#logo").attr("src", "assets/icons/light/logo.svg");
 }
+
+/** Picture anim */
+function color_me() {
+   $("#me").attr("src", "assets/images/me_color.png");
+}
+
+function purple_me() {
+   $("#me").attr("src", "assets/images/me_prl.png");
+}
