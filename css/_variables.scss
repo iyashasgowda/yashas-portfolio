@@ -15,9 +15,9 @@
    --font-weight: normal;
 
    /** Transitions */
-   --slow-transition: 300ms ease;
-   --medium-transition: 250ms ease;
-   --fast-transition: 200ms ease;
+   --slow-transition: 300ms ease-out;
+   --medium-transition: 250ms ease-out;
+   --fast-transition: 200ms ease-out;
 
    /** Opacities */
    --low-opacity: 0.4;
@@ -28,4 +28,12 @@
    /** Box Shadows */
    --drop-shadow: drop-shadow(0 6px 3px rgba(0, 0, 0, var(--medium-opacity)));
    --drop-shadow-hover: drop-shadow(0 0 0 rgba(black, 0));
+}
+
+::selection {
+   background: rgba(
+      $color: var(--color-accent-rgb),
+      $alpha: var(--high-opacity)
+   );
+   color: rgba($color: var(--color-primary-rgb), $alpha: var(--high-opacity));
 }
