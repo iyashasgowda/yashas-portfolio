@@ -72,6 +72,7 @@ $("#dark-mode-btn").click(function () {
       $("#javascript").attr("src", "assets/icons/light/javascript_light.svg");
       $("#android").attr("src", "assets/icons/light/android_light.svg");
       $("#dotnet").attr("src", "assets/icons/light/dotnet_light.svg");
+      $("#sqlserver").attr("src", "assets/icons/light/sqlserver_light.svg");
       $("#eclipse").attr("src", "assets/icons/light/eclipse_light.svg");
       $("#intellij").attr("src", "assets/icons/light/intellij_light.svg");
       $("#androidstudio").attr(
@@ -90,6 +91,7 @@ $("#dark-mode-btn").click(function () {
       $("#git").attr("src", "assets/icons/light/git_light.svg");
       $("#figma").attr("src", "assets/icons/light/figma_light.svg");
       $("#photoshop").attr("src", "assets/icons/light/photoshop_light.svg");
+      $("#reading_me").attr("src", "assets/images/reading_me_light.png");
    } else {
       root.style.setProperty("--is-dark-mode", 0);
 
@@ -137,6 +139,7 @@ $("#dark-mode-btn").click(function () {
       $("#git").attr("src", "assets/icons/dark/git_dark.svg");
       $("#figma").attr("src", "assets/icons/dark/figma_dark.svg");
       $("#photoshop").attr("src", "assets/icons/dark/photoshop_dark.svg");
+      $("#reading_me").attr("src", "assets/images/reading_me_dark.png");
    }
 
    is_dark_mode = root.style.getPropertyValue("--is-dark-mode");
@@ -204,195 +207,189 @@ function icon_unhover() {
 /** Skill card anim */
 function skill_card_hover(id) {
    if (is_dark_mode == 0) {
-      if (id == 1) {
+      if (id == 1)
          $("#c_sharp").attr("src", "assets/icons/light/c_sharp_light.svg");
-      } else if (id == 2) {
+      else if (id == 2)
          $("#java").attr("src", "assets/icons/light/java_light.svg");
-      } else if (id == 3) {
+      else if (id == 3)
          $("#html").attr("src", "assets/icons/light/html_light.svg");
-      } else if (id == 4) {
+      else if (id == 4)
          $("#css").attr("src", "assets/icons/light/css_light.svg");
-      } else if (id == 5) {
+      else if (id == 5)
          $("#javascript").attr(
             "src",
             "assets/icons/light/javascript_light.svg"
          );
-      } else if (id == 6) {
+      else if (id == 6)
          $("#android").attr("src", "assets/icons/light/android_light.svg");
-      } else if (id == 7) {
+      else if (id == 7)
          $("#dotnet").attr("src", "assets/icons/light/dotnet_light.svg");
-      } else if (id == 8) {
+      else if (id == 8)
          $("#sqlserver").attr("src", "assets/icons/light/sqlserver_light.svg");
-      } else if (id == 9) {
+      else if (id == 9)
          $("#eclipse").attr("src", "assets/icons/light/eclipse_light.svg");
-      } else if (id == 10) {
+      else if (id == 10)
          $("#intellij").attr("src", "assets/icons/light/intellij_light.svg");
-      } else if (id == 11) {
+      else if (id == 11)
          $("#androidstudio").attr(
             "src",
             "assets/icons/light/androidstudio_light.svg"
          );
-      } else if (id == 12) {
+      else if (id == 12)
          $("#visualstudio").attr(
             "src",
             "assets/icons/light/visualstudio_light.svg"
          );
-      } else if (id == 13) {
+      else if (id == 13)
          $("#visualstudiocode").attr(
             "src",
             "assets/icons/light/visualstudiocode_light.svg"
          );
-      } else if (id == 14) {
+      else if (id == 14)
          $("#postman").attr("src", "assets/icons/light/postman_light.svg");
-      } else if (id == 15) {
+      else if (id == 15)
          $("#git").attr("src", "assets/icons/light/git_light.svg");
-      } else if (id == 16) {
+      else if (id == 16)
          $("#figma").attr("src", "assets/icons/light/figma_light.svg");
-      } else if (id == 17) {
+      else if (id == 17)
          $("#photoshop").attr("src", "assets/icons/light/photoshop_light.svg");
-      }
    } else {
-      if (id == 1) {
+      if (id == 1)
          $("#c_sharp").attr("src", "assets/icons/dark/c_sharp_dark.svg");
-      } else if (id == 2) {
+      else if (id == 2)
          $("#java").attr("src", "assets/icons/dark/java_dark.svg");
-      } else if (id == 3) {
+      else if (id == 3)
          $("#html").attr("src", "assets/icons/dark/html_dark.svg");
-      } else if (id == 4) {
-         $("#css").attr("src", "assets/icons/dark/css_dark.svg");
-      } else if (id == 5) {
+      else if (id == 4) $("#css").attr("src", "assets/icons/dark/css_dark.svg");
+      else if (id == 5)
          $("#javascript").attr("src", "assets/icons/dark/javascript_dark.svg");
-      } else if (id == 6) {
+      else if (id == 6)
          $("#android").attr("src", "assets/icons/dark/android_dark.svg");
-      } else if (id == 7) {
+      else if (id == 7)
          $("#dotnet").attr("src", "assets/icons/dark/dotnet_dark.svg");
-      } else if (id == 8) {
+      else if (id == 8)
          $("#sqlserver").attr("src", "assets/icons/dark/sqlserver_dark.svg");
-      } else if (id == 9) {
+      else if (id == 9)
          $("#eclipse").attr("src", "assets/icons/dark/eclipse_dark.svg");
-      } else if (id == 10) {
+      else if (id == 10)
          $("#intellij").attr("src", "assets/icons/dark/intellij_dark.svg");
-      } else if (id == 11) {
+      else if (id == 11)
          $("#androidstudio").attr(
             "src",
             "assets/icons/dark/androidstudio_dark.svg"
          );
-      } else if (id == 12) {
+      else if (id == 12)
          $("#visualstudio").attr(
             "src",
             "assets/icons/dark/visualstudio_dark.svg"
          );
-      } else if (id == 13) {
+      else if (id == 13)
          $("#visualstudiocode").attr(
             "src",
             "assets/icons/dark/visualstudiocode_dark.svg"
          );
-      } else if (id == 14) {
+      else if (id == 14)
          $("#postman").attr("src", "assets/icons/dark/postman_dark.svg");
-      } else if (id == 15) {
+      else if (id == 15)
          $("#git").attr("src", "assets/icons/dark/git_dark.svg");
-      } else if (id == 16) {
+      else if (id == 16)
          $("#figma").attr("src", "assets/icons/dark/figma_dark.svg");
-      } else if (id == 17) {
+      else if (id == 17)
          $("#photoshop").attr("src", "assets/icons/dark/photoshop_dark.svg");
-      }
    }
 }
 
 function skill_card_unhover(id) {
    if (is_dark_mode == 0) {
-      if (id == 1) {
+      if (id == 1)
          $("#c_sharp").attr("src", "assets/icons/dark/c_sharp_dark.svg");
-      } else if (id == 2) {
+      else if (id == 2)
          $("#java").attr("src", "assets/icons/dark/java_dark.svg");
-      } else if (id == 3) {
+      else if (id == 3)
          $("#html").attr("src", "assets/icons/dark/html_dark.svg");
-      } else if (id == 4) {
-         $("#css").attr("src", "assets/icons/dark/css_dark.svg");
-      } else if (id == 5) {
+      else if (id == 4) $("#css").attr("src", "assets/icons/dark/css_dark.svg");
+      else if (id == 5)
          $("#javascript").attr("src", "assets/icons/dark/javascript_dark.svg");
-      } else if (id == 6) {
+      else if (id == 6)
          $("#android").attr("src", "assets/icons/dark/android_dark.svg");
-      } else if (id == 7) {
+      else if (id == 7)
          $("#dotnet").attr("src", "assets/icons/dark/dotnet_dark.svg");
-      } else if (id == 8) {
+      else if (id == 8)
          $("#sqlserver").attr("src", "assets/icons/dark/sqlserver_dark.svg");
-      } else if (id == 9) {
+      else if (id == 9)
          $("#eclipse").attr("src", "assets/icons/dark/eclipse_dark.svg");
-      } else if (id == 10) {
+      else if (id == 10)
          $("#intellij").attr("src", "assets/icons/dark/intellij_dark.svg");
-      } else if (id == 11) {
+      else if (id == 11)
          $("#androidstudio").attr(
             "src",
             "assets/icons/dark/androidstudio_dark.svg"
          );
-      } else if (id == 12) {
+      else if (id == 12)
          $("#visualstudio").attr(
             "src",
             "assets/icons/dark/visualstudio_dark.svg"
          );
-      } else if (id == 13) {
+      else if (id == 13)
          $("#visualstudiocode").attr(
             "src",
             "assets/icons/dark/visualstudiocode_dark.svg"
          );
-      } else if (id == 14) {
+      else if (id == 14)
          $("#postman").attr("src", "assets/icons/dark/postman_dark.svg");
-      } else if (id == 15) {
+      else if (id == 15)
          $("#git").attr("src", "assets/icons/dark/git_dark.svg");
-      } else if (id == 16) {
+      else if (id == 16)
          $("#figma").attr("src", "assets/icons/dark/figma_dark.svg");
-      } else if (id == 17) {
+      else if (id == 17)
          $("#photoshop").attr("src", "assets/icons/dark/photoshop_dark.svg");
-      }
    } else {
-      if (id == 1) {
+      if (id == 1)
          $("#c_sharp").attr("src", "assets/icons/light/c_sharp_light.svg");
-      } else if (id == 2) {
+      else if (id == 2)
          $("#java").attr("src", "assets/icons/light/java_light.svg");
-      } else if (id == 3) {
+      else if (id == 3)
          $("#html").attr("src", "assets/icons/light/html_light.svg");
-      } else if (id == 4) {
+      else if (id == 4)
          $("#css").attr("src", "assets/icons/light/css_light.svg");
-      } else if (id == 5) {
+      else if (id == 5)
          $("#javascript").attr(
             "src",
             "assets/icons/light/javascript_light.svg"
          );
-      } else if (id == 6) {
+      else if (id == 6)
          $("#android").attr("src", "assets/icons/light/android_light.svg");
-      } else if (id == 7) {
+      else if (id == 7)
          $("#dotnet").attr("src", "assets/icons/light/dotnet_light.svg");
-      } else if (id == 8) {
+      else if (id == 8)
          $("#sqlserver").attr("src", "assets/icons/light/sqlserver_light.svg");
-      } else if (id == 9) {
+      else if (id == 9)
          $("#eclipse").attr("src", "assets/icons/light/eclipse_light.svg");
-      } else if (id == 10) {
+      else if (id == 10)
          $("#intellij").attr("src", "assets/icons/light/intellij_light.svg");
-      } else if (id == 11) {
+      else if (id == 11)
          $("#androidstudio").attr(
             "src",
             "assets/icons/light/androidstudio_light.svg"
          );
-      } else if (id == 12) {
+      else if (id == 12)
          $("#visualstudio").attr(
             "src",
             "assets/icons/light/visualstudio_light.svg"
          );
-      } else if (id == 13) {
+      else if (id == 13)
          $("#visualstudiocode").attr(
             "src",
             "assets/icons/light/visualstudiocode_light.svg"
          );
-      } else if (id == 14) {
+      else if (id == 14)
          $("#postman").attr("src", "assets/icons/light/postman_light.svg");
-      } else if (id == 15) {
+      else if (id == 15)
          $("#git").attr("src", "assets/icons/light/git_light.svg");
-      } else if (id == 16) {
+      else if (id == 16)
          $("#figma").attr("src", "assets/icons/light/figma_light.svg");
-      } else if (id == 17) {
+      else if (id == 17)
          $("#photoshop").attr("src", "assets/icons/light/photoshop_light.svg");
-      }
    }
 }
 
