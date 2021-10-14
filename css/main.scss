@@ -292,15 +292,7 @@ section:nth-child(1) {
          width: 32%;
          height: auto;
          margin: 12em 4em 0 0;
-         filter: var(--drop-shadow);
-         transition: var(--fast-transition);
-         animation: 0.3s ease-out 0s 1 avatar-anim;
-
-         &:hover {
-            cursor: pointer;
-            transform: scale(0.95);
-            filter: var(--drop-shadow-hover);
-         }
+         @include avatarStyle();
       }
    }
 }
@@ -773,12 +765,10 @@ section:nth-child(3) {
          @include centerItems();
 
          img {
-            height: 12em;
-            width: 12em;
+            height: auto;
+            width: 16%;
 
-            filter: var(--drop-shadow);
-            transition: var(--fast-transition);
-            animation: 0.3s ease-out 0s 1 avatar-anim;
+            @include avatarStyle();
 
             &:hover {
                cursor: pointer;
@@ -788,7 +778,8 @@ section:nth-child(3) {
          }
 
          p {
-            margin-left: 1em;
+            margin-left: 2em;
+            margin-top: 1em;
             font-size: 1.3em;
             line-height: 1.3em;
             color: rgba(
@@ -802,7 +793,223 @@ section:nth-child(3) {
 }
 
 section:nth-child(4) {
-   background-color: lightyellow;
+   height: 200vh;
+   width: 85%;
+
+   @include centerItems();
+   flex-direction: column;
+   justify-content: flex-start;
+
+   .work-title {
+      height: auto;
+      width: 70%;
+      margin-top: 3em;
+
+      h2 {
+         font-size: 2em;
+         color: rgba(
+            $color: var(--color-accent-rgb),
+            $alpha: var(--high-opacity)
+         );
+         animation: 0.4s ease-out 0s 1 about-title-anim;
+      }
+
+      h2::after {
+         height: 1px;
+         width: 8em;
+
+         content: "";
+         margin: 0.6em;
+         display: inline-block;
+         vertical-align: middle;
+         background-color: rgba(
+            $color: var(--color-accent-rgb),
+            $alpha: var(--medium-opacity)
+         );
+      }
+   }
+
+   .work-body {
+      height: 100%;
+      width: 70%;
+
+      @include centerItems();
+      flex-direction: column;
+
+      .color-palette {
+         height: 25%;
+         width: 100%;
+
+         @include centerItems();
+
+         img {
+            height: auto;
+            width: 20%;
+
+            @include avatarStyle();
+         }
+
+         div {
+            height: 100%;
+            width: 75%;
+
+            @include centerItems();
+            justify-content: flex-start;
+
+            .cp-holder {
+               height: 20em;
+               width: 34em;
+
+               margin-left: 3em;
+               transition: 0.3s ease;
+               @include centerItems();
+
+               .cp-front {
+                  position: relative;
+                  height: 20em;
+                  width: 34em;
+                  margin: 0;
+
+                  border-radius: 2em;
+                  transition: 0.25s ease;
+                  filter: var(--drop-shadow);
+
+                  background-image: url("/assets/images/prl/cp_prl.png");
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  background-position: center;
+               }
+
+               .cp-tag {
+                  width: 1.4em;
+                  height: auto;
+
+                  margin-top: 2em;
+                  align-self: flex-start;
+                  justify-self: flex-end;
+
+                  border-radius: 0 0.8em 0.8em 0;
+                  transition: 0.6s ease;
+                  background-color: var(--color-accent-hex);
+
+                  p {
+                     font-size: 0.85em;
+                     font-weight: 900;
+                     writing-mode: vertical-rl;
+                     margin: 1.2em 0 1.2em 0.2em;
+                     color: rgba(
+                        $color: var(--color-primary-rgb),
+                        $alpha: var(--high-opacity)
+                     );
+                  }
+               }
+
+               .cp-back {
+                  height: 20em;
+                  width: 30em;
+
+                  margin: 0;
+                  position: absolute;
+                  flex-direction: column;
+                  justify-content: flex-end;
+
+                  border-radius: 2em;
+                  transition: var(--medium-transition);
+                  background-color: var(--color-accent-hex);
+
+                  article {
+                     height: 80%;
+                     width: 70%;
+
+                     color: var(--color-primary-hex);
+                     border-radius: 0 2em 0 0;
+                     align-self: flex-end;
+                     align-items: flex-start;
+
+                     h1 {
+                        font-size: 2em;
+                        margin: 1em 0 0 0;
+                        transition: var(--medium-transition);
+                     }
+
+                     p:nth-of-type(1),
+                     p:nth-of-type(2) {
+                        width: 90%;
+                        font-size: 1.2em;
+                        line-height: 1.2em;
+                        margin: 0.8em 0 0.8em 0;
+                        opacity: var(--high-opacity);
+                     }
+
+                     p:nth-of-type(3) {
+                        font-size: 1em;
+                        font-weight: 900;
+                        margin: 1.4em 0 0 0;
+
+                        span {
+                           :hover {
+                              cursor: pointer;
+                           }
+                        }
+                     }
+                  }
+
+                  div {
+                     height: 20%;
+                     width: 100%;
+                     border-radius: 0 0 2em 2em;
+
+                     ul {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+
+                        li {
+                           @include keywordStyle();
+                        }
+                     }
+                  }
+               }
+
+               &:hover {
+                  .cp-back {
+                     height: 20em;
+                     width: 36em;
+                     border-radius: 2em;
+                     transform: translateX(8em);
+                     filter: var(--drop-shadow);
+                  }
+
+                  .cp-front {
+                     width: 16em;
+                     border-radius: 3em 3em 0em 3em;
+                     transform: translate(-8em, -4em);
+
+                     &:hover {
+                        cursor: pointer;
+                     }
+                  }
+               }
+            }
+         }
+      }
+
+      .wallpaper-sh {
+         height: 25%;
+         width: 100%;
+         background-color: darkgrey;
+      }
+      .short-stories {
+         height: 25%;
+         width: 100%;
+         background-color: darkmagenta;
+      }
+      .musify {
+         height: 25%;
+         width: 100%;
+         background-color: darkorange;
+      }
+   }
 }
 
 section:nth-child(5) {

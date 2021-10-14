@@ -33,7 +33,7 @@
 
                   <img
                      id="avatar"
-                     src="./assets/images/avatar_white.png"
+                     src="./assets/images/light/avatar_white.png"
                      alt="me"
                   />
                </div>
@@ -98,7 +98,7 @@
                      <div>
                         <img
                            id="me"
-                           src="assets/images/me_prl.png"
+                           src="assets/images/prl/me_prl.png"
                            width="420"
                            alt="me"
                            onmouseover="color_me();"
@@ -400,10 +400,11 @@
 
                   <div>
                      <img
-                        id="reading_me"
-                        src="assets/images/reading_me_dark.png"
-                        alt="reading_me"
+                        id="working_me"
+                        src="assets/images/dark/working_dark.png"
+                        alt="working_me"
                      />
+
                      <p>
                         I like to code things from scratch, and enjoy bringing
                         ideas to life. I'm naturally curious and perpetually
@@ -418,7 +419,72 @@
             </section>
 
             <!-- Work -->
-            <section id="work-section"></section>
+            <section id="work-section">
+               <div class="work-title">
+                  <h2>Work</h2>
+               </div>
+
+               <div class="work-body">
+                  <div class="color-palette">
+                     <img
+                        src="assets/images/dark/coloring_dark.png"
+                        alt="coloring_me"
+                     />
+
+                     <div>
+                        <div
+                           class="cp-holder"
+                           onmouseover="color_graphics(1);"
+                           onmouseout="purple_graphics(1);"
+                        >
+                           <div class="cp-back">
+                              <article>
+                                 <h1>Color Palette</h1>
+
+                                 <p>
+                                    Has been designed with colors that work
+                                    harmoniously with each other.
+                                 </p>
+
+                                 <p>
+                                    With this application, you can extract
+                                    palettes from images, create a solid,
+                                    gradient, and harmonious colors.
+                                 </p>
+
+                                 <p>
+                                    <span id="cp-link"
+                                       ><i class="fas fa-external-link-alt"></i
+                                    ></span>
+                                    &ensp; #art #design #personalization
+                                    #utility
+                                 </p>
+                              </article>
+
+                              <div>
+                                 <ul>
+                                    <li>Java</li>
+                                    <li>XML</li>
+                                    <li>Android Studio</li>
+                                    <li>Palette</li>
+                                    <li>Picasso</li>
+                                    <li>Play Billing</li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div id="cp-image" class="cp-front"></div>
+                           <div class="cp-tag"><p>Jul 5, 2019</p></div>
+                        </div>
+                     </div>
+                  </div>
+                  
+                  <div class="wallpaper-sh"></div>
+                  <div class="short-stories"></div>
+                  <div class="musify"></div>
+               </div>
+            </section>
+
+            <!-- Contact -->
             <section id="contact-section"></section>
          </div>
 

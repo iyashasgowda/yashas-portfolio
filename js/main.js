@@ -6,6 +6,9 @@ const facebook = "https://facebook.com/iyashasgowda";
 const instagram = "https://instagram.com/iyashasgowda";
 const github = "https://github.com/iyashasgowda";
 
+const color_palette =
+   "https://play.google.com/store/apps/details?id=com.blogspot.yashas003.colorpalette";
+
 let root = document.documentElement;
 let is_dark_mode = root.style.getPropertyValue("--is-dark-mode");
 
@@ -64,7 +67,7 @@ $("#dark-mode-btn").click(function () {
       $("#twitter").attr("src", "assets/icons/light/twitter.svg");
       $("#instagram").attr("src", "assets/icons/light/instagram.svg");
       $("#facebook").attr("src", "assets/icons/light/facebook.svg");
-      $("#avatar").attr("src", "assets/images/avatar_black.png");
+      $("#avatar").attr("src", "assets/images/dark/avatar_black.png");
       $("#c_sharp").attr("src", "assets/icons/light/c_sharp_light.svg");
       $("#java").attr("src", "assets/icons/light/java_light.svg");
       $("#html").attr("src", "assets/icons/light/html_light.svg");
@@ -91,7 +94,7 @@ $("#dark-mode-btn").click(function () {
       $("#git").attr("src", "assets/icons/light/git_light.svg");
       $("#figma").attr("src", "assets/icons/light/figma_light.svg");
       $("#photoshop").attr("src", "assets/icons/light/photoshop_light.svg");
-      $("#reading_me").attr("src", "assets/images/reading_me_light.png");
+      $("#working_me").attr("src", "assets/images/light/working_light.png");
    } else {
       root.style.setProperty("--is-dark-mode", 0);
 
@@ -115,7 +118,7 @@ $("#dark-mode-btn").click(function () {
       $("#twitter").attr("src", "assets/icons/dark/twitter.svg");
       $("#instagram").attr("src", "assets/icons/dark/instagram.svg");
       $("#facebook").attr("src", "assets/icons/dark/facebook.svg");
-      $("#avatar").attr("src", "assets/images/avatar_white.png");
+      $("#avatar").attr("src", "assets/images/light/avatar_white.png");
       $("#c_sharp").attr("src", "assets/icons/dark/c_sharp_dark.svg");
       $("#java").attr("src", "assets/icons/dark/java_dark.svg");
       $("#html").attr("src", "assets/icons/dark/html_dark.svg");
@@ -139,7 +142,7 @@ $("#dark-mode-btn").click(function () {
       $("#git").attr("src", "assets/icons/dark/git_dark.svg");
       $("#figma").attr("src", "assets/icons/dark/figma_dark.svg");
       $("#photoshop").attr("src", "assets/icons/dark/photoshop_dark.svg");
-      $("#reading_me").attr("src", "assets/images/reading_me_dark.png");
+      $("#working_me").attr("src", "assets/images/dark/working_dark.png");
    }
 
    is_dark_mode = root.style.getPropertyValue("--is-dark-mode");
@@ -190,6 +193,11 @@ $("#contact").click(function () {
 /** Download Resume */
 $("#resume").click(function () {
    window.open("resume.pdf", "_blank");
+});
+
+/** Goto app website */
+$("#cp-link").click(function () {
+   window.open(color_palette);
 });
 
 /** Icon anim */
@@ -393,11 +401,30 @@ function skill_card_unhover(id) {
    }
 }
 
+/** App graphics anim */
+function purple_graphics(id) {
+   if (id == 1) {
+      $("#cp-image").css(
+         "background-image",
+         "url(/assets/images/prl/cp_prl.png)"
+      );
+   }
+}
+
+function color_graphics(id) {
+   if (id == 1) {
+      $("#cp-image").css(
+         "background-image",
+         "url(/assets/images/color/cp_color.png)"
+      );
+   }
+}
+
 /** Picture anim */
 function color_me() {
-   $("#me").attr("src", "assets/images/me_color.png");
+   $("#me").attr("src", "assets/images/color/me_color.png");
 }
 
 function purple_me() {
-   $("#me").attr("src", "assets/images/me_prl.png");
+   $("#me").attr("src", "assets/images/prl/me_prl.png");
 }
