@@ -8,6 +8,10 @@ const github = "https://github.com/iyashasgowda";
 
 const color_palette =
    "https://play.google.com/store/apps/details?id=com.blogspot.yashas003.colorpalette";
+const wallpaper_sh =
+   "https://play.google.com/store/apps/details?id=com.yashas003.wallpapersh";
+const short_stories =
+   "https://play.google.com/store/apps/details?id=com.yashas003.shortstories";
 
 let root = document.documentElement;
 let is_dark_mode = root.style.getPropertyValue("--is-dark-mode");
@@ -95,6 +99,9 @@ $("#dark-mode-btn").click(function () {
       $("#figma").attr("src", "assets/icons/light/figma_light.svg");
       $("#photoshop").attr("src", "assets/icons/light/photoshop_light.svg");
       $("#working_me").attr("src", "assets/images/light/working_light.png");
+      $("#coloring_me").attr("src", "assets/images/light/coloring_light.png");
+      $("#wallpaper_me").attr("src", "assets/images/light/wallpaper_light.png");
+      $("#stories_me").attr("src", "assets/images/light/stories_light.png");
    } else {
       root.style.setProperty("--is-dark-mode", 0);
 
@@ -143,6 +150,9 @@ $("#dark-mode-btn").click(function () {
       $("#figma").attr("src", "assets/icons/dark/figma_dark.svg");
       $("#photoshop").attr("src", "assets/icons/dark/photoshop_dark.svg");
       $("#working_me").attr("src", "assets/images/dark/working_dark.png");
+      $("#coloring_me").attr("src", "assets/images/dark/coloring_dark.png");
+      $("#wallpaper_me").attr("src", "assets/images/dark/wallpaper_dark.png");
+      $("#stories_me").attr("src", "assets/images/dark/stories_dark.png");
    }
 
    is_dark_mode = root.style.getPropertyValue("--is-dark-mode");
@@ -198,6 +208,14 @@ $("#resume").click(function () {
 /** Goto app website */
 $("#cp-link").click(function () {
    window.open(color_palette);
+});
+
+$("#ws-link").click(function () {
+   window.open(wallpaper_sh);
+});
+
+$("#ss-link").click(function () {
+   window.open(short_stories);
 });
 
 /** Icon anim */
@@ -408,6 +426,16 @@ function purple_graphics(id) {
          "background-image",
          "url(/assets/images/prl/cp_prl.png)"
       );
+   } else if (id == 2) {
+      $("#ws-image").css(
+         "background-image",
+         "url(/assets/images/prl/ws_prl.png)"
+      );
+   } else if (id == 3) {
+      $("#ss-image").css(
+         "background-image",
+         "url(/assets/images/prl/ss_prl.png)"
+      );
    }
 }
 
@@ -416,6 +444,16 @@ function color_graphics(id) {
       $("#cp-image").css(
          "background-image",
          "url(/assets/images/color/cp_color.png)"
+      );
+   } else if (id == 2) {
+      $("#ws-image").css(
+         "background-image",
+         "url(/assets/images/color/ws_color.png)"
+      );
+   } else if (id == 3) {
+      $("#ss-image").css(
+         "background-image",
+         "url(/assets/images/color/ss_color.png)"
       );
    }
 }
