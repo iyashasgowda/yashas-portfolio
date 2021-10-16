@@ -12,6 +12,8 @@ const wallpaper_sh =
    "https://play.google.com/store/apps/details?id=com.yashas003.wallpapersh";
 const short_stories =
    "https://play.google.com/store/apps/details?id=com.yashas003.shortstories";
+const musify =
+   "https://play.google.com/store/apps/details?id=com.ash.studios.musify";
 
 let root = document.documentElement;
 let is_dark_mode = root.style.getPropertyValue("--is-dark-mode");
@@ -102,6 +104,7 @@ $("#dark-mode-btn").click(function () {
       $("#coloring_me").attr("src", "assets/images/light/coloring_light.png");
       $("#wallpaper_me").attr("src", "assets/images/light/wallpaper_light.png");
       $("#stories_me").attr("src", "assets/images/light/stories_light.png");
+      $("#musify_me").attr("src", "assets/images/light/music_light.png");
    } else {
       root.style.setProperty("--is-dark-mode", 0);
 
@@ -153,6 +156,7 @@ $("#dark-mode-btn").click(function () {
       $("#coloring_me").attr("src", "assets/images/dark/coloring_dark.png");
       $("#wallpaper_me").attr("src", "assets/images/dark/wallpaper_dark.png");
       $("#stories_me").attr("src", "assets/images/dark/stories_dark.png");
+      $("#musify_me").attr("src", "assets/images/dark/music_dark.png");
    }
 
    is_dark_mode = root.style.getPropertyValue("--is-dark-mode");
@@ -216,6 +220,10 @@ $("#ws-link").click(function () {
 
 $("#ss-link").click(function () {
    window.open(short_stories);
+});
+
+$("#mf-link").click(function () {
+   window.open(musify);
 });
 
 /** Icon anim */
@@ -436,6 +444,11 @@ function purple_graphics(id) {
          "background-image",
          "url(/assets/images/prl/ss_prl.png)"
       );
+   } else if (id == 4) {
+      $("#mf-image").css(
+         "background-image",
+         "url(/assets/images/prl/mf_prl.png)"
+      );
    }
 }
 
@@ -454,6 +467,11 @@ function color_graphics(id) {
       $("#ss-image").css(
          "background-image",
          "url(/assets/images/color/ss_color.png)"
+      );
+   } else if (id == 4) {
+      $("#mf-image").css(
+         "background-image",
+         "url(/assets/images/color/mf_color.png)"
       );
    }
 }
