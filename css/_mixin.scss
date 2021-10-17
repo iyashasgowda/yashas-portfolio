@@ -57,3 +57,27 @@
       color: var(--color-primary-hex);
    }
 }
+
+@mixin buttonStyle {
+   font-size: 1.2em;
+   font-family: var(--font-family);
+   color: rgba($color: var(--color-accent-rgb), $alpha: var(--medium-opacity));
+
+   margin-top: 1.4em;
+   letter-spacing: 0.04em;
+   padding: 0.6em 0.8em 0.5em 0.8em;
+
+   border-radius: 0.4em;
+   background-color: transparent;
+   border: 0.1em solid rgba($color: var(--color-accent-rgb), $alpha: var(--medium-opacity));
+
+   animation: 0.6s ease 0s 1 text-anim;
+   transition: var(--medium-transition);
+
+   &:hover {
+      cursor: pointer;
+      transform: scale(0.95);
+      color: var(--color-primary-hex);
+      background-color: var(--color-accent-hex);
+   }
+}

@@ -45,6 +45,14 @@ window.onscroll = function () {
       });
    }
 
+   if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+      $("header").css({
+         top: "0",
+         height: "88px",
+         "box-shadow": "0 0 20px 2px rgba(0, 0, 0, 0.4)",
+      });
+   }
+
    previous = current;
 };
 
@@ -105,6 +113,7 @@ $("#dark-mode-btn").click(function () {
       $("#wallpaper_me").attr("src", "assets/images/light/wallpaper_light.png");
       $("#stories_me").attr("src", "assets/images/light/stories_light.png");
       $("#musify_me").attr("src", "assets/images/light/music_light.png");
+      $("#me_thankyou").attr("src", "assets/images/light/me_light.png");
    } else {
       root.style.setProperty("--is-dark-mode", 0);
 
@@ -157,6 +166,7 @@ $("#dark-mode-btn").click(function () {
       $("#wallpaper_me").attr("src", "assets/images/dark/wallpaper_dark.png");
       $("#stories_me").attr("src", "assets/images/dark/stories_dark.png");
       $("#musify_me").attr("src", "assets/images/dark/music_dark.png");
+      $("#me_thankyou").attr("src", "assets/images/dark/me_dark.png");
    }
 
    is_dark_mode = root.style.getPropertyValue("--is-dark-mode");
@@ -187,6 +197,10 @@ $("#email").click(function () {
    window.open("mailto:" + email);
 });
 
+$("#get_in_touch").click(function () {
+   window.open("mailto:" + email);
+});
+
 /** Navigation */
 $("#about").click(function () {
    document.getElementById("about-section").scrollIntoView();
@@ -200,8 +214,12 @@ $("#work").click(function () {
    document.getElementById("work-section").scrollIntoView();
 });
 
-$("#contact").click(function () {
-   document.getElementById("contact-section").scrollIntoView();
+$("#connect").click(function () {
+   document.getElementById("connect-section").scrollIntoView();
+});
+
+$("#go-top").click(function () {
+   document.getElementById("main-section").scrollIntoView();
 });
 
 /** Download Resume */
