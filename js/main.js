@@ -57,7 +57,7 @@ window.onscroll = function () {
 };
 
 /** Changing theme */
-$("#dark-mode-btn").click(function () {
+$("#dark-mode-btn, #nav-theme").click(function () {
    if (is_dark_mode == 0) {
       root.style.setProperty("--is-dark-mode", 1);
 
@@ -114,6 +114,7 @@ $("#dark-mode-btn").click(function () {
       $("#stories_me").attr("src", "assets/images/light/stories_light.png");
       $("#musify_me").attr("src", "assets/images/light/music_light.png");
       $("#me_thankyou").attr("src", "assets/images/light/me_light.png");
+      $("#header_menu").attr("src", "assets/icons/light/menu.svg");
    } else {
       root.style.setProperty("--is-dark-mode", 0);
 
@@ -167,8 +168,10 @@ $("#dark-mode-btn").click(function () {
       $("#stories_me").attr("src", "assets/images/dark/stories_dark.png");
       $("#musify_me").attr("src", "assets/images/dark/music_dark.png");
       $("#me_thankyou").attr("src", "assets/images/dark/me_dark.png");
+      $("#header_menu").attr("src", "assets/icons/dark/menu.svg");
    }
 
+   $("#left-menu").css("width", "0%");
    is_dark_mode = root.style.getPropertyValue("--is-dark-mode");
 });
 
@@ -193,28 +196,28 @@ $("#github").click(function () {
    window.open(github);
 });
 
-$("#email").click(function () {
-   window.open("mailto:" + email);
-});
-
-$("#get_in_touch").click(function () {
+$("#email, #get_in_touch, #footer_gmail").click(function () {
    window.open("mailto:" + email);
 });
 
 /** Navigation */
-$("#about").click(function () {
+$("#about, #nav-about").click(function () {
+   $("#left-menu").css("width", "0%");
    document.getElementById("about-section").scrollIntoView();
 });
 
-$("#skills").click(function () {
+$("#skills, #nav-skills").click(function () {
+   $("#left-menu").css("width", "0%");
    document.getElementById("skills-section").scrollIntoView();
 });
 
-$("#work").click(function () {
+$("#work, #nav-work").click(function () {
+   $("#left-menu").css("width", "0%");
    document.getElementById("work-section").scrollIntoView();
 });
 
-$("#connect").click(function () {
+$("#connect, #nav-connect").click(function () {
+   $("#left-menu").css("width", "0%");
    document.getElementById("connect-section").scrollIntoView();
 });
 
@@ -502,3 +505,12 @@ function color_me() {
 function purple_me() {
    $("#me").attr("src", "assets/images/prl/me_prl.png");
 }
+
+/** Close menu */
+$("#header_menu").click(function () {
+   $("#left-menu").css("width", "70%");
+});
+
+$("#close-menu").click(function () {
+   $("#left-menu").css("width", "0%");
+});
