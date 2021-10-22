@@ -5,6 +5,7 @@ const twitter = "https://twitter.com/iyashasgowda";
 const facebook = "https://facebook.com/iyashasgowda";
 const instagram = "https://instagram.com/iyashasgowda";
 const github = "https://github.com/iyashasgowda";
+const self = "https://iyashasgowda.com";
 
 const color_palette =
    "https://play.google.com/store/apps/details?id=com.blogspot.yashas003.colorpalette";
@@ -176,23 +177,23 @@ $("#dark-mode-btn, #nav-theme").click(function () {
 });
 
 /** Social accounts */
-$("#linkedin").click(function () {
+$("#linkedin, #footer_linkedin").click(function () {
    window.open(linkedin);
 });
 
-$("#twitter").click(function () {
+$("#twitter, #footer_twitter").click(function () {
    window.open(twitter);
 });
 
-$("#facebook").click(function () {
+$("#facebook, #footer_facebook").click(function () {
    window.open(facebook);
 });
 
-$("#instagram").click(function () {
+$("#instagram, #footer_instagram").click(function () {
    window.open(instagram);
 });
 
-$("#github").click(function () {
+$("#github, #footer_github").click(function () {
    window.open(github);
 });
 
@@ -245,6 +246,10 @@ $("#ss-link").click(function () {
 
 $("#mf-link").click(function () {
    window.open(musify);
+});
+
+$("#copyright_name, #logo").click(function () {
+   window.open(self);
 });
 
 /** Icon anim */
