@@ -1,6 +1,6 @@
 # Yashas's Portfolio
 
-This repository contains the source code for [iyashasgowda.com](https://iyashasgowda.com).
+This repository contains the source code for [iyashasgowda.com](https://iyashasgowda.com)
 
 ## Info
 
