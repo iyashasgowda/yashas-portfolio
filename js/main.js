@@ -77,11 +77,23 @@ $("#dark-mode-btn, #nav-theme").click(function () {
       /** assets */
       $("#dark-mode-btn").attr("src", "assets/icons/light/dark_mode.svg");
       $("#logo").attr("src", "assets/icons/light/logo.svg");
-      $("#github").attr("src", "assets/icons/light/github.svg");
-      $("#linkedin").attr("src", "assets/icons/light/linkedin.svg");
-      $("#twitter").attr("src", "assets/icons/light/twitter.svg");
-      $("#instagram").attr("src", "assets/icons/light/instagram.svg");
-      $("#facebook").attr("src", "assets/icons/light/facebook.svg");
+      $("#github, #footer_github").attr("src", "assets/icons/light/github.svg");
+      $("#linkedin, #footer_linkedin").attr(
+         "src",
+         "assets/icons/light/linkedin.svg"
+      );
+      $("#twitter, #footer_twitter").attr(
+         "src",
+         "assets/icons/light/twitter.svg"
+      );
+      $("#instagram, #footer_instagram").attr(
+         "src",
+         "assets/icons/light/instagram.svg"
+      );
+      $("#facebook, #footer_facebook").attr(
+         "src",
+         "assets/icons/light/facebook.svg"
+      );
       $("#avatar").attr("src", "assets/images/dark/avatar_black.png");
       $("#c_sharp").attr("src", "assets/icons/light/c_sharp_light.svg");
       $("#java").attr("src", "assets/icons/light/java_light.svg");
@@ -116,6 +128,7 @@ $("#dark-mode-btn, #nav-theme").click(function () {
       $("#musify_me").attr("src", "assets/images/light/music_light.png");
       $("#me_thankyou").attr("src", "assets/images/light/me_light.png");
       $("#header_menu").attr("src", "assets/icons/light/menu.svg");
+      $("#footer_gmail").attr("src", "assets/icons/light/gmail.svg");
    } else {
       root.style.setProperty("--is-dark-mode", 0);
 
@@ -134,11 +147,23 @@ $("#dark-mode-btn, #nav-theme").click(function () {
       /** assets */
       $("#dark-mode-btn").attr("src", "assets/icons/dark/light_mode.svg");
       $("#logo").attr("src", "assets/icons/dark/logo.svg");
-      $("#github").attr("src", "assets/icons/dark/github.svg");
-      $("#linkedin").attr("src", "assets/icons/dark/linkedin.svg");
-      $("#twitter").attr("src", "assets/icons/dark/twitter.svg");
-      $("#instagram").attr("src", "assets/icons/dark/instagram.svg");
-      $("#facebook").attr("src", "assets/icons/dark/facebook.svg");
+      $("#github, #footer_github").attr("src", "assets/icons/dark/github.svg");
+      $("#linkedin, #footer_linkedin").attr(
+         "src",
+         "assets/icons/dark/linkedin.svg"
+      );
+      $("#twitter, #footer_twitter").attr(
+         "src",
+         "assets/icons/dark/twitter.svg"
+      );
+      $("#instagram, #footer_instagram").attr(
+         "src",
+         "assets/icons/dark/instagram.svg"
+      );
+      $("#facebook, #footer_facebook").attr(
+         "src",
+         "assets/icons/dark/facebook.svg"
+      );
       $("#avatar").attr("src", "assets/images/light/avatar_white.png");
       $("#c_sharp").attr("src", "assets/icons/dark/c_sharp_dark.svg");
       $("#java").attr("src", "assets/icons/dark/java_dark.svg");
@@ -170,6 +195,7 @@ $("#dark-mode-btn, #nav-theme").click(function () {
       $("#musify_me").attr("src", "assets/images/dark/music_dark.png");
       $("#me_thankyou").attr("src", "assets/images/dark/me_dark.png");
       $("#header_menu").attr("src", "assets/icons/dark/menu.svg");
+      $("#footer_gmail").attr("src", "assets/icons/dark/gmail.svg");
    }
 
    $("#left-menu").css("width", "0%");
