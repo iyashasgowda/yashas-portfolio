@@ -4,7 +4,7 @@ This repository contains the source code for [iyashasgowda.com](https://iyashasg
 
 ## Info
 
-- The site has been built with pure **HTML,** **CSS &** **JavaScript**. No pluggins or packages are used.
+The site has been built with pure **HTML,** **CSS &** **JavaScript**. No pluggins or packages are used.
 
 ## License
 
