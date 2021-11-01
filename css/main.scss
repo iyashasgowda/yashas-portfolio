@@ -26,10 +26,16 @@ body {
    }
    &::-webkit-scrollbar-thumb {
       border-radius: 0.4em;
-      background-color: rgba(
-         $color: var(--color-accent-rgb),
-         $alpha: var(--medium-opacity)
-      );
+      background-color: rgba($color: var(--color-accent-rgb), $alpha: var(--medium-opacity));
+   }
+
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   p {
+      user-select: none;
    }
 }
 
@@ -44,10 +50,7 @@ header {
    backdrop-filter: blur(0.6em);
    justify-content: space-between;
    transition: var(--slow-transition);
-   background-color: rgba(
-      $color: var(--color-primary-rgb),
-      $alpha: var(--high-opacity)
-   );
+   background-color: rgba($color: var(--color-primary-rgb), $alpha: var(--high-opacity));
 
    img:nth-child(1) {
       cursor: pointer;
@@ -67,22 +70,16 @@ header {
 
          li {
             margin: 1.2em;
-            font-size: 1em;
+            font-size: 1.1em;
             list-style: none;
             transition: var(--fast-transition);
-            color: rgba(
-               $color: var(--color-accent-rgb),
-               $alpha: var(--medium-opacity)
-            );
+            color: rgba($color: var(--color-accent-rgb), $alpha: var(--medium-opacity));
 
             &:hover {
                cursor: pointer;
                transform: translateY(-0.2em);
                font-weight: var(--font-weight);
-               color: rgba(
-                  $color: var(--color-accent-rgb),
-                  $alpha: var(--full-opacity)
-               );
+               color: rgba($color: var(--color-accent-rgb), $alpha: var(--full-opacity));
             }
          }
       }
@@ -145,10 +142,7 @@ main {
             width: 1px;
             height: 6em;
             margin: auto;
-            background-color: rgba(
-               $color: var(--color-accent-rgb),
-               $alpha: var(--medium-opacity)
-            );
+            background-color: rgba($color: var(--color-accent-rgb), $alpha: var(--medium-opacity));
          }
       }
    }
@@ -171,10 +165,7 @@ main {
          margin-top: 1.5em;
          margin-bottom: 1.5em;
          font-size: 1.15em;
-         color: rgba(
-            $color: var(--color-accent-rgb),
-            $alpha: var(--medium-opacity)
-         );
+         color: rgba($color: var(--color-accent-rgb), $alpha: var(--medium-opacity));
          writing-mode: vertical-rl;
          transition: var(--fast-transition);
 
@@ -192,10 +183,7 @@ main {
          width: 1px;
          height: 6em;
          margin-left: 1.5em;
-         background-color: rgba(
-            $color: var(--color-accent-rgb),
-            $alpha: var(--medium-opacity)
-         );
+         background-color: rgba($color: var(--color-accent-rgb), $alpha: var(--medium-opacity));
       }
    }
 
@@ -230,10 +218,7 @@ section:nth-child(1) {
          margin: 20em 2em 0 0;
          flex-direction: column;
 
-         color: rgba(
-            $color: var(--color-accent-rgb),
-            $alpha: var(--medium-opacity)
-         );
+         color: rgba($color: var(--color-accent-rgb), $alpha: var(--medium-opacity));
 
          p:nth-child(1) {
             font-size: 1.5em;
@@ -246,10 +231,7 @@ section:nth-child(1) {
             font-size: 4.5em;
             line-height: 1em;
             animation: 0.4s ease 0s 1 text-anim;
-            color: rgba(
-               $color: var(--color-accent-rgb),
-               $alpha: var(--full-opacity)
-            );
+            color: rgba($color: var(--color-accent-rgb), $alpha: var(--full-opacity));
          }
 
          p:nth-of-type(2) {
@@ -286,10 +268,7 @@ section:nth-of-type(2) {
 
       h2 {
          font-size: 2em;
-         color: rgba(
-            $color: var(--color-accent-rgb),
-            $alpha: var(--high-opacity)
-         );
+         color: rgba($color: var(--color-accent-rgb), $alpha: var(--high-opacity));
          animation: 0.4s ease-out 0s 1 about-title-anim;
       }
 
@@ -301,10 +280,7 @@ section:nth-of-type(2) {
          margin: 0.6em;
          display: inline-block;
          vertical-align: middle;
-         background-color: rgba(
-            $color: var(--color-accent-rgb),
-            $alpha: var(--medium-opacity)
-         );
+         background-color: rgba($color: var(--color-accent-rgb), $alpha: var(--medium-opacity));
       }
    }
 
@@ -329,17 +305,11 @@ section:nth-of-type(2) {
                h3 {
                   font-size: 1.5em;
                   margin: 0;
-                  color: rgba(
-                     $color: var(--color-accent-rgb),
-                     $alpha: var(--medium-opacity)
-                  );
+                  color: rgba($color: var(--color-accent-rgb), $alpha: var(--medium-opacity));
 
                   a {
                      text-decoration: none;
-                     color: rgba(
-                        $color: var(--color-accent-rgb),
-                        $alpha: var(--full-opacity)
-                     );
+                     color: rgba($color: var(--color-accent-rgb), $alpha: var(--full-opacity));
                   }
                }
 
@@ -350,19 +320,13 @@ section:nth-of-type(2) {
                   font-size: 0;
 
                   transition: 0.3s ease;
-                  color: rgba(
-                     $color: var(--color-accent-rgb),
-                     $alpha: var(--full-opacity)
-                  );
+                  color: rgba($color: var(--color-accent-rgb), $alpha: var(--full-opacity));
                }
 
                p {
                   font-size: 1.2em;
                   margin-top: 0.6em;
-                  color: rgba(
-                     $color: var(--color-accent-rgb),
-                     $alpha: var(--high-opacity)
-                  );
+                  color: rgba($color: var(--color-accent-rgb), $alpha: var(--high-opacity));
                }
 
                &:hover {
@@ -379,10 +343,7 @@ section:nth-of-type(2) {
                width: 2px;
                height: 2.5em;
                margin-left: 0.6em;
-               background-color: rgba(
-                  $color: var(--color-accent-rgb),
-                  $alpha: var(--medium-opacity)
-               );
+               background-color: rgba($color: var(--color-accent-rgb), $alpha: var(--medium-opacity));
             }
 
             li:nth-of-type(1) {
@@ -432,10 +393,7 @@ section:nth-of-type(2) {
 
                   padding: 0.3em;
                   border-width: 0.2em;
-                  border-color: rgba(
-                     $color: var(--color-accent-rgb),
-                     $alpha: var(--high-opacity)
-                  );
+                  border-color: rgba($color: var(--color-accent-rgb), $alpha: var(--high-opacity));
                   border-style: none inset inset none;
                   border-radius: 5.5em 5.5em 5.5em 0em;
                }
@@ -451,10 +409,7 @@ section:nth-of-type(2) {
             p {
                font-size: 1.3em;
                line-height: 1.3em;
-               color: rgba(
-                  $color: var(--color-accent-rgb),
-                  $alpha: var(--medium-opacity)
-               );
+               color: rgba($color: var(--color-accent-rgb), $alpha: var(--medium-opacity));
 
                &:nth-child(1) {
                   animation: 0.4s ease-out 0s 1 text-anim;
@@ -483,10 +438,7 @@ section:nth-child(3) {
 
       h2 {
          font-size: 2em;
-         color: rgba(
-            $color: var(--color-accent-rgb),
-            $alpha: var(--high-opacity)
-         );
+         color: rgba($color: var(--color-accent-rgb), $alpha: var(--high-opacity));
          animation: 0.4s ease-out 0s 1 about-title-anim;
       }
 
@@ -498,10 +450,7 @@ section:nth-child(3) {
          margin: 0.6em;
          display: inline-block;
          vertical-align: middle;
-         background-color: rgba(
-            $color: var(--color-accent-rgb),
-            $alpha: var(--medium-opacity)
-         );
+         background-color: rgba($color: var(--color-accent-rgb), $alpha: var(--medium-opacity));
       }
    }
 
@@ -521,10 +470,7 @@ section:nth-child(3) {
          h2 {
             margin-top: 0.5em;
             font-size: 1.6em;
-            color: rgba(
-               $color: var(--color-accent-rgb),
-               $alpha: var(--medium-opacity)
-            );
+            color: rgba($color: var(--color-accent-rgb), $alpha: var(--medium-opacity));
             text-align: center;
             animation: 0.6s ease 0s 1 text-anim;
          }
@@ -645,10 +591,7 @@ section:nth-child(3) {
          h2 {
             margin-top: 0;
             font-size: 1.4em;
-            color: rgba(
-               $color: var(--color-accent-rgb),
-               $alpha: var(--medium-opacity)
-            );
+            color: rgba($color: var(--color-accent-rgb), $alpha: var(--medium-opacity));
             text-align: center;
             animation: 0.6s ease 0s 1 text-anim;
          }
@@ -772,10 +715,7 @@ section:nth-child(3) {
             margin-top: 1em;
             font-size: 1.3em;
             line-height: 1.3em;
-            color: rgba(
-               $color: var(--color-accent-rgb),
-               $alpha: var(--medium-opacity)
-            );
+            color: rgba($color: var(--color-accent-rgb), $alpha: var(--medium-opacity));
             animation: 0.6s ease-out 0s 1 text-anim;
          }
       }
@@ -797,10 +737,7 @@ section:nth-child(4) {
 
       h2 {
          font-size: 2em;
-         color: rgba(
-            $color: var(--color-accent-rgb),
-            $alpha: var(--high-opacity)
-         );
+         color: rgba($color: var(--color-accent-rgb), $alpha: var(--high-opacity));
          animation: 0.4s ease-out 0s 1 about-title-anim;
       }
 
@@ -812,10 +749,7 @@ section:nth-child(4) {
          margin: 0.6em;
          display: inline-block;
          vertical-align: middle;
-         background-color: rgba(
-            $color: var(--color-accent-rgb),
-            $alpha: var(--medium-opacity)
-         );
+         background-color: rgba($color: var(--color-accent-rgb), $alpha: var(--medium-opacity));
       }
    }
 
@@ -936,7 +870,8 @@ section:nth-child(4) {
 
                      ul {
                         width: 100%;
-                        display: flex;
+                        padding: 0;
+                        @include centerItems();
 
                         li {
                            @include keywordStyle();
@@ -1085,7 +1020,8 @@ section:nth-child(4) {
 
                      ul {
                         width: 100%;
-                        display: flex;
+                        padding: 0;
+                        @include centerItems();
 
                         li {
                            @include keywordStyle();
@@ -1234,7 +1170,8 @@ section:nth-child(4) {
 
                      ul {
                         width: 100%;
-                        display: flex;
+                        padding: 0;
+                        @include centerItems();
 
                         li {
                            @include keywordStyle();
@@ -1383,7 +1320,8 @@ section:nth-child(4) {
 
                      ul {
                         width: 100%;
-                        display: flex;
+                        padding: 0;
+                        @include centerItems();
 
                         li {
                            @include keywordStyle();
@@ -1433,10 +1371,7 @@ section:nth-child(5) {
    }
 
    p {
-      color: rgba(
-         $color: var(--color-accent-rgb),
-         $alpha: var(--medium-opacity)
-      );
+      color: rgba($color: var(--color-accent-rgb), $alpha: var(--medium-opacity));
       animation: 0.3s ease 0s 1 text-anim;
    }
 
@@ -1446,25 +1381,18 @@ section:nth-child(5) {
       margin-top: 0;
       font-size: 0.8em;
       animation: 0.6s ease 0s 1 text-anim;
-      border: 0.05em solid
-         rgba($color: var(--color-accent-rgb), $alpha: var(--medium-opacity));
+      border: 0.05em solid rgba($color: var(--color-accent-rgb), $alpha: var(--medium-opacity));
    }
 
    h1 {
       transition: 0.3s;
-      color: rgba(
-         $color: var(--color-accent-rgb),
-         $alpha: var(--medium-opacity)
-      );
+      color: rgba($color: var(--color-accent-rgb), $alpha: var(--medium-opacity));
 
       &:hover {
          cursor: pointer;
          transform: translateY(0.2em);
 
-         color: rgba(
-            $color: var(--color-accent-rgb),
-            $alpha: var(--full-opacity)
-         );
+         color: rgba($color: var(--color-accent-rgb), $alpha: var(--full-opacity));
       }
    }
 }
@@ -1480,10 +1408,7 @@ footer {
       padding: 0;
       text-align: center;
       line-height: 1.5em;
-      color: rgba(
-         $color: var(--color-accent-rgb),
-         $alpha: var(--medium-opacity)
-      );
+      color: rgba($color: var(--color-accent-rgb), $alpha: var(--medium-opacity));
       animation: 0.6s ease 0s 1 text-anim;
 
       span {

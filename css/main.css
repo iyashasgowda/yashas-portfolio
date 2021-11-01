@@ -196,6 +196,24 @@ body::-webkit-scrollbar-thumb {
   background-color: rgba(var(--color-accent-rgb), var(--medium-opacity));
 }
 
+html h1,
+html h2,
+html h3,
+html h4,
+html h5,
+html p,
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body p {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 header {
   top: 0;
   position: fixed;
@@ -250,7 +268,7 @@ header div ul {
 
 header div ul li {
   margin: 1.2em;
-  font-size: 1em;
+  font-size: 1.1em;
   list-style: none;
   -webkit-transition: var(--fast-transition);
   transition: var(--fast-transition);
@@ -1386,9 +1404,16 @@ section:nth-child(4) .work-body .color-palette div .cp-holder .cp-back div {
 
 section:nth-child(4) .work-body .color-palette div .cp-holder .cp-back div ul {
   width: 100%;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 section:nth-child(4) .work-body .color-palette div .cp-holder .cp-back div ul li {
@@ -1622,9 +1647,16 @@ section:nth-child(4) .work-body .wallpaper-sh div .ws-holder .ws-back div {
 
 section:nth-child(4) .work-body .wallpaper-sh div .ws-holder .ws-back div ul {
   width: 100%;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 section:nth-child(4) .work-body .wallpaper-sh div .ws-holder .ws-back div ul li {
@@ -1851,9 +1883,16 @@ section:nth-child(4) .work-body .short-stories div .ss-holder .ss-back div {
 
 section:nth-child(4) .work-body .short-stories div .ss-holder .ss-back div ul {
   width: 100%;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 section:nth-child(4) .work-body .short-stories div .ss-holder .ss-back div ul li {
@@ -2087,9 +2126,16 @@ section:nth-child(4) .work-body .musify div .mf-holder .mf-back div {
 
 section:nth-child(4) .work-body .musify div .mf-holder .mf-back div ul {
   width: 100%;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 section:nth-child(4) .work-body .musify div .mf-holder .mf-back div ul li {
