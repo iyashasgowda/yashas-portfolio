@@ -7,14 +7,10 @@ const instagram = "https://instagram.com/iyashasgowda";
 const github = "https://github.com/iyashasgowda";
 const self = "https://iyashasgowda.com";
 
-const color_palette =
-   "https://play.google.com/store/apps/details?id=com.blogspot.yashas003.colorpalette";
-const wallpaper_sh =
-   "https://play.google.com/store/apps/details?id=com.yashas003.wallpapersh";
-const short_stories =
-   "https://play.google.com/store/apps/details?id=com.yashas003.shortstories";
-const musify =
-   "https://play.google.com/store/apps/details?id=com.ash.studios.musify";
+const color_palette = "https://play.google.com/store/apps/details?id=com.blogspot.yashas003.colorpalette";
+const wallpaper_sh = "https://play.google.com/store/apps/details?id=com.yashas003.wallpapersh";
+const short_stories = "https://play.google.com/store/apps/details?id=com.yashas003.shortstories";
+const musify = "https://play.google.com/store/apps/details?id=com.ash.studios.musify";
 
 let root = document.documentElement;
 let is_dark_mode = root.style.getPropertyValue("--is-dark-mode");
@@ -62,6 +58,9 @@ $("#dark-mode-btn, #nav-theme").click(function () {
    if (is_dark_mode == 0) {
       root.style.setProperty("--is-dark-mode", 1);
 
+      /** Navigation theme name */
+      document.getElementById("nav-theme").innerHTML = "Dark Mode";
+
       /** colors */
       root.style.setProperty("--color-primary-hex", "#eceff1");
       root.style.setProperty("--color-accent-hex", "#301934");
@@ -78,22 +77,10 @@ $("#dark-mode-btn, #nav-theme").click(function () {
       $("#dark-mode-btn").attr("src", "assets/icons/light/dark_mode.svg");
       $("#logo").attr("src", "assets/icons/light/logo.svg");
       $("#github, #footer_github").attr("src", "assets/icons/light/github.svg");
-      $("#linkedin, #footer_linkedin").attr(
-         "src",
-         "assets/icons/light/linkedin.svg"
-      );
-      $("#twitter, #footer_twitter").attr(
-         "src",
-         "assets/icons/light/twitter.svg"
-      );
-      $("#instagram, #footer_instagram").attr(
-         "src",
-         "assets/icons/light/instagram.svg"
-      );
-      $("#facebook, #footer_facebook").attr(
-         "src",
-         "assets/icons/light/facebook.svg"
-      );
+      $("#linkedin, #footer_linkedin").attr("src", "assets/icons/light/linkedin.svg");
+      $("#twitter, #footer_twitter").attr("src", "assets/icons/light/twitter.svg");
+      $("#instagram, #footer_instagram").attr("src", "assets/icons/light/instagram.svg");
+      $("#facebook, #footer_facebook").attr("src", "assets/icons/light/facebook.svg");
       $("#avatar").attr("src", "assets/images/dark/avatar_black.png");
       $("#c_sharp").attr("src", "assets/icons/light/c_sharp_light.svg");
       $("#java").attr("src", "assets/icons/light/java_light.svg");
@@ -105,18 +92,9 @@ $("#dark-mode-btn, #nav-theme").click(function () {
       $("#sqlserver").attr("src", "assets/icons/light/sqlserver_light.svg");
       $("#eclipse").attr("src", "assets/icons/light/eclipse_light.svg");
       $("#intellij").attr("src", "assets/icons/light/intellij_light.svg");
-      $("#androidstudio").attr(
-         "src",
-         "assets/icons/light/androidstudio_light.svg"
-      );
-      $("#visualstudio").attr(
-         "src",
-         "assets/icons/light/visualstudio_light.svg"
-      );
-      $("#visualstudiocode").attr(
-         "src",
-         "assets/icons/light/visualstudiocode_light.svg"
-      );
+      $("#androidstudio").attr("src", "assets/icons/light/androidstudio_light.svg");
+      $("#visualstudio").attr("src", "assets/icons/light/visualstudio_light.svg");
+      $("#visualstudiocode").attr("src", "assets/icons/light/visualstudiocode_light.svg");
       $("#postman").attr("src", "assets/icons/light/postman_light.svg");
       $("#git").attr("src", "assets/icons/light/git_light.svg");
       $("#figma").attr("src", "assets/icons/light/figma_light.svg");
@@ -131,6 +109,9 @@ $("#dark-mode-btn, #nav-theme").click(function () {
       $("#footer_gmail").attr("src", "assets/icons/light/gmail.svg");
    } else {
       root.style.setProperty("--is-dark-mode", 0);
+
+      /** Navigation theme name */
+      document.getElementById("nav-theme").innerHTML = "Light Mode";
 
       /** colors */
       root.style.setProperty("--color-primary-hex", "#301934");
@@ -148,22 +129,10 @@ $("#dark-mode-btn, #nav-theme").click(function () {
       $("#dark-mode-btn").attr("src", "assets/icons/dark/light_mode.svg");
       $("#logo").attr("src", "assets/icons/dark/logo.svg");
       $("#github, #footer_github").attr("src", "assets/icons/dark/github.svg");
-      $("#linkedin, #footer_linkedin").attr(
-         "src",
-         "assets/icons/dark/linkedin.svg"
-      );
-      $("#twitter, #footer_twitter").attr(
-         "src",
-         "assets/icons/dark/twitter.svg"
-      );
-      $("#instagram, #footer_instagram").attr(
-         "src",
-         "assets/icons/dark/instagram.svg"
-      );
-      $("#facebook, #footer_facebook").attr(
-         "src",
-         "assets/icons/dark/facebook.svg"
-      );
+      $("#linkedin, #footer_linkedin").attr("src", "assets/icons/dark/linkedin.svg");
+      $("#twitter, #footer_twitter").attr("src", "assets/icons/dark/twitter.svg");
+      $("#instagram, #footer_instagram").attr("src", "assets/icons/dark/instagram.svg");
+      $("#facebook, #footer_facebook").attr("src", "assets/icons/dark/facebook.svg");
       $("#avatar").attr("src", "assets/images/light/avatar_white.png");
       $("#c_sharp").attr("src", "assets/icons/dark/c_sharp_dark.svg");
       $("#java").attr("src", "assets/icons/dark/java_dark.svg");
@@ -175,15 +144,9 @@ $("#dark-mode-btn, #nav-theme").click(function () {
       $("#sqlserver").attr("src", "assets/icons/dark/sqlserver_dark.svg");
       $("#eclipse").attr("src", "assets/icons/dark/eclipse_dark.svg");
       $("#intellij").attr("src", "assets/icons/dark/intellij_dark.svg");
-      $("#androidstudio").attr(
-         "src",
-         "assets/icons/dark/androidstudio_dark.svg"
-      );
+      $("#androidstudio").attr("src", "assets/icons/dark/androidstudio_dark.svg");
       $("#visualstudio").attr("src", "assets/icons/dark/visualstudio_dark.svg");
-      $("#visualstudiocode").attr(
-         "src",
-         "assets/icons/dark/visualstudiocode_dark.svg"
-      );
+      $("#visualstudiocode").attr("src", "assets/icons/dark/visualstudiocode_dark.svg");
       $("#postman").attr("src", "assets/icons/dark/postman_dark.svg");
       $("#git").attr("src", "assets/icons/dark/git_dark.svg");
       $("#figma").attr("src", "assets/icons/dark/figma_dark.svg");
@@ -280,8 +243,7 @@ $("#copyright_name, #logo").click(function () {
 
 /** Icon anim */
 function icon_hover() {
-   if (is_dark_mode == 0)
-      $("#logo").attr("src", "assets/icons/dark/logo_filled.png");
+   if (is_dark_mode == 0) $("#logo").attr("src", "assets/icons/dark/logo_filled.png");
    else $("#logo").attr("src", "assets/icons/light/logo_filled.png");
 }
 
@@ -293,238 +255,106 @@ function icon_unhover() {
 /** Skill card anim */
 function skill_card_hover(id) {
    if (is_dark_mode == 0) {
-      if (id == 1)
-         $("#c_sharp").attr("src", "assets/icons/light/c_sharp_light.svg");
-      else if (id == 2)
-         $("#java").attr("src", "assets/icons/light/java_light.svg");
-      else if (id == 3)
-         $("#html").attr("src", "assets/icons/light/html_light.svg");
-      else if (id == 4)
-         $("#css").attr("src", "assets/icons/light/css_light.svg");
-      else if (id == 5)
-         $("#javascript").attr(
-            "src",
-            "assets/icons/light/javascript_light.svg"
-         );
-      else if (id == 6)
-         $("#android").attr("src", "assets/icons/light/android_light.svg");
-      else if (id == 7)
-         $("#dotnet").attr("src", "assets/icons/light/dotnet_light.svg");
-      else if (id == 8)
-         $("#sqlserver").attr("src", "assets/icons/light/sqlserver_light.svg");
-      else if (id == 9)
-         $("#eclipse").attr("src", "assets/icons/light/eclipse_light.svg");
-      else if (id == 10)
-         $("#intellij").attr("src", "assets/icons/light/intellij_light.svg");
-      else if (id == 11)
-         $("#androidstudio").attr(
-            "src",
-            "assets/icons/light/androidstudio_light.svg"
-         );
-      else if (id == 12)
-         $("#visualstudio").attr(
-            "src",
-            "assets/icons/light/visualstudio_light.svg"
-         );
-      else if (id == 13)
-         $("#visualstudiocode").attr(
-            "src",
-            "assets/icons/light/visualstudiocode_light.svg"
-         );
-      else if (id == 14)
-         $("#postman").attr("src", "assets/icons/light/postman_light.svg");
-      else if (id == 15)
-         $("#git").attr("src", "assets/icons/light/git_light.svg");
-      else if (id == 16)
-         $("#figma").attr("src", "assets/icons/light/figma_light.svg");
-      else if (id == 17)
-         $("#photoshop").attr("src", "assets/icons/light/photoshop_light.svg");
+      if (id == 1) $("#c_sharp").attr("src", "assets/icons/light/c_sharp_light.svg");
+      else if (id == 2) $("#java").attr("src", "assets/icons/light/java_light.svg");
+      else if (id == 3) $("#html").attr("src", "assets/icons/light/html_light.svg");
+      else if (id == 4) $("#css").attr("src", "assets/icons/light/css_light.svg");
+      else if (id == 5) $("#javascript").attr("src", "assets/icons/light/javascript_light.svg");
+      else if (id == 6) $("#android").attr("src", "assets/icons/light/android_light.svg");
+      else if (id == 7) $("#dotnet").attr("src", "assets/icons/light/dotnet_light.svg");
+      else if (id == 8) $("#sqlserver").attr("src", "assets/icons/light/sqlserver_light.svg");
+      else if (id == 9) $("#eclipse").attr("src", "assets/icons/light/eclipse_light.svg");
+      else if (id == 10) $("#intellij").attr("src", "assets/icons/light/intellij_light.svg");
+      else if (id == 11) $("#androidstudio").attr("src", "assets/icons/light/androidstudio_light.svg");
+      else if (id == 12) $("#visualstudio").attr("src", "assets/icons/light/visualstudio_light.svg");
+      else if (id == 13) $("#visualstudiocode").attr("src", "assets/icons/light/visualstudiocode_light.svg");
+      else if (id == 14) $("#postman").attr("src", "assets/icons/light/postman_light.svg");
+      else if (id == 15) $("#git").attr("src", "assets/icons/light/git_light.svg");
+      else if (id == 16) $("#figma").attr("src", "assets/icons/light/figma_light.svg");
+      else if (id == 17) $("#photoshop").attr("src", "assets/icons/light/photoshop_light.svg");
    } else {
-      if (id == 1)
-         $("#c_sharp").attr("src", "assets/icons/dark/c_sharp_dark.svg");
-      else if (id == 2)
-         $("#java").attr("src", "assets/icons/dark/java_dark.svg");
-      else if (id == 3)
-         $("#html").attr("src", "assets/icons/dark/html_dark.svg");
+      if (id == 1) $("#c_sharp").attr("src", "assets/icons/dark/c_sharp_dark.svg");
+      else if (id == 2) $("#java").attr("src", "assets/icons/dark/java_dark.svg");
+      else if (id == 3) $("#html").attr("src", "assets/icons/dark/html_dark.svg");
       else if (id == 4) $("#css").attr("src", "assets/icons/dark/css_dark.svg");
-      else if (id == 5)
-         $("#javascript").attr("src", "assets/icons/dark/javascript_dark.svg");
-      else if (id == 6)
-         $("#android").attr("src", "assets/icons/dark/android_dark.svg");
-      else if (id == 7)
-         $("#dotnet").attr("src", "assets/icons/dark/dotnet_dark.svg");
-      else if (id == 8)
-         $("#sqlserver").attr("src", "assets/icons/dark/sqlserver_dark.svg");
-      else if (id == 9)
-         $("#eclipse").attr("src", "assets/icons/dark/eclipse_dark.svg");
-      else if (id == 10)
-         $("#intellij").attr("src", "assets/icons/dark/intellij_dark.svg");
-      else if (id == 11)
-         $("#androidstudio").attr(
-            "src",
-            "assets/icons/dark/androidstudio_dark.svg"
-         );
-      else if (id == 12)
-         $("#visualstudio").attr(
-            "src",
-            "assets/icons/dark/visualstudio_dark.svg"
-         );
-      else if (id == 13)
-         $("#visualstudiocode").attr(
-            "src",
-            "assets/icons/dark/visualstudiocode_dark.svg"
-         );
-      else if (id == 14)
-         $("#postman").attr("src", "assets/icons/dark/postman_dark.svg");
-      else if (id == 15)
-         $("#git").attr("src", "assets/icons/dark/git_dark.svg");
-      else if (id == 16)
-         $("#figma").attr("src", "assets/icons/dark/figma_dark.svg");
-      else if (id == 17)
-         $("#photoshop").attr("src", "assets/icons/dark/photoshop_dark.svg");
+      else if (id == 5) $("#javascript").attr("src", "assets/icons/dark/javascript_dark.svg");
+      else if (id == 6) $("#android").attr("src", "assets/icons/dark/android_dark.svg");
+      else if (id == 7) $("#dotnet").attr("src", "assets/icons/dark/dotnet_dark.svg");
+      else if (id == 8) $("#sqlserver").attr("src", "assets/icons/dark/sqlserver_dark.svg");
+      else if (id == 9) $("#eclipse").attr("src", "assets/icons/dark/eclipse_dark.svg");
+      else if (id == 10) $("#intellij").attr("src", "assets/icons/dark/intellij_dark.svg");
+      else if (id == 11) $("#androidstudio").attr("src", "assets/icons/dark/androidstudio_dark.svg");
+      else if (id == 12) $("#visualstudio").attr("src", "assets/icons/dark/visualstudio_dark.svg");
+      else if (id == 13) $("#visualstudiocode").attr("src", "assets/icons/dark/visualstudiocode_dark.svg");
+      else if (id == 14) $("#postman").attr("src", "assets/icons/dark/postman_dark.svg");
+      else if (id == 15) $("#git").attr("src", "assets/icons/dark/git_dark.svg");
+      else if (id == 16) $("#figma").attr("src", "assets/icons/dark/figma_dark.svg");
+      else if (id == 17) $("#photoshop").attr("src", "assets/icons/dark/photoshop_dark.svg");
    }
 }
 
 function skill_card_unhover(id) {
    if (is_dark_mode == 0) {
-      if (id == 1)
-         $("#c_sharp").attr("src", "assets/icons/dark/c_sharp_dark.svg");
-      else if (id == 2)
-         $("#java").attr("src", "assets/icons/dark/java_dark.svg");
-      else if (id == 3)
-         $("#html").attr("src", "assets/icons/dark/html_dark.svg");
+      if (id == 1) $("#c_sharp").attr("src", "assets/icons/dark/c_sharp_dark.svg");
+      else if (id == 2) $("#java").attr("src", "assets/icons/dark/java_dark.svg");
+      else if (id == 3) $("#html").attr("src", "assets/icons/dark/html_dark.svg");
       else if (id == 4) $("#css").attr("src", "assets/icons/dark/css_dark.svg");
-      else if (id == 5)
-         $("#javascript").attr("src", "assets/icons/dark/javascript_dark.svg");
-      else if (id == 6)
-         $("#android").attr("src", "assets/icons/dark/android_dark.svg");
-      else if (id == 7)
-         $("#dotnet").attr("src", "assets/icons/dark/dotnet_dark.svg");
-      else if (id == 8)
-         $("#sqlserver").attr("src", "assets/icons/dark/sqlserver_dark.svg");
-      else if (id == 9)
-         $("#eclipse").attr("src", "assets/icons/dark/eclipse_dark.svg");
-      else if (id == 10)
-         $("#intellij").attr("src", "assets/icons/dark/intellij_dark.svg");
-      else if (id == 11)
-         $("#androidstudio").attr(
-            "src",
-            "assets/icons/dark/androidstudio_dark.svg"
-         );
-      else if (id == 12)
-         $("#visualstudio").attr(
-            "src",
-            "assets/icons/dark/visualstudio_dark.svg"
-         );
-      else if (id == 13)
-         $("#visualstudiocode").attr(
-            "src",
-            "assets/icons/dark/visualstudiocode_dark.svg"
-         );
-      else if (id == 14)
-         $("#postman").attr("src", "assets/icons/dark/postman_dark.svg");
-      else if (id == 15)
-         $("#git").attr("src", "assets/icons/dark/git_dark.svg");
-      else if (id == 16)
-         $("#figma").attr("src", "assets/icons/dark/figma_dark.svg");
-      else if (id == 17)
-         $("#photoshop").attr("src", "assets/icons/dark/photoshop_dark.svg");
+      else if (id == 5) $("#javascript").attr("src", "assets/icons/dark/javascript_dark.svg");
+      else if (id == 6) $("#android").attr("src", "assets/icons/dark/android_dark.svg");
+      else if (id == 7) $("#dotnet").attr("src", "assets/icons/dark/dotnet_dark.svg");
+      else if (id == 8) $("#sqlserver").attr("src", "assets/icons/dark/sqlserver_dark.svg");
+      else if (id == 9) $("#eclipse").attr("src", "assets/icons/dark/eclipse_dark.svg");
+      else if (id == 10) $("#intellij").attr("src", "assets/icons/dark/intellij_dark.svg");
+      else if (id == 11) $("#androidstudio").attr("src", "assets/icons/dark/androidstudio_dark.svg");
+      else if (id == 12) $("#visualstudio").attr("src", "assets/icons/dark/visualstudio_dark.svg");
+      else if (id == 13) $("#visualstudiocode").attr("src", "assets/icons/dark/visualstudiocode_dark.svg");
+      else if (id == 14) $("#postman").attr("src", "assets/icons/dark/postman_dark.svg");
+      else if (id == 15) $("#git").attr("src", "assets/icons/dark/git_dark.svg");
+      else if (id == 16) $("#figma").attr("src", "assets/icons/dark/figma_dark.svg");
+      else if (id == 17) $("#photoshop").attr("src", "assets/icons/dark/photoshop_dark.svg");
    } else {
-      if (id == 1)
-         $("#c_sharp").attr("src", "assets/icons/light/c_sharp_light.svg");
-      else if (id == 2)
-         $("#java").attr("src", "assets/icons/light/java_light.svg");
-      else if (id == 3)
-         $("#html").attr("src", "assets/icons/light/html_light.svg");
-      else if (id == 4)
-         $("#css").attr("src", "assets/icons/light/css_light.svg");
-      else if (id == 5)
-         $("#javascript").attr(
-            "src",
-            "assets/icons/light/javascript_light.svg"
-         );
-      else if (id == 6)
-         $("#android").attr("src", "assets/icons/light/android_light.svg");
-      else if (id == 7)
-         $("#dotnet").attr("src", "assets/icons/light/dotnet_light.svg");
-      else if (id == 8)
-         $("#sqlserver").attr("src", "assets/icons/light/sqlserver_light.svg");
-      else if (id == 9)
-         $("#eclipse").attr("src", "assets/icons/light/eclipse_light.svg");
-      else if (id == 10)
-         $("#intellij").attr("src", "assets/icons/light/intellij_light.svg");
-      else if (id == 11)
-         $("#androidstudio").attr(
-            "src",
-            "assets/icons/light/androidstudio_light.svg"
-         );
-      else if (id == 12)
-         $("#visualstudio").attr(
-            "src",
-            "assets/icons/light/visualstudio_light.svg"
-         );
-      else if (id == 13)
-         $("#visualstudiocode").attr(
-            "src",
-            "assets/icons/light/visualstudiocode_light.svg"
-         );
-      else if (id == 14)
-         $("#postman").attr("src", "assets/icons/light/postman_light.svg");
-      else if (id == 15)
-         $("#git").attr("src", "assets/icons/light/git_light.svg");
-      else if (id == 16)
-         $("#figma").attr("src", "assets/icons/light/figma_light.svg");
-      else if (id == 17)
-         $("#photoshop").attr("src", "assets/icons/light/photoshop_light.svg");
+      if (id == 1) $("#c_sharp").attr("src", "assets/icons/light/c_sharp_light.svg");
+      else if (id == 2) $("#java").attr("src", "assets/icons/light/java_light.svg");
+      else if (id == 3) $("#html").attr("src", "assets/icons/light/html_light.svg");
+      else if (id == 4) $("#css").attr("src", "assets/icons/light/css_light.svg");
+      else if (id == 5) $("#javascript").attr("src", "assets/icons/light/javascript_light.svg");
+      else if (id == 6) $("#android").attr("src", "assets/icons/light/android_light.svg");
+      else if (id == 7) $("#dotnet").attr("src", "assets/icons/light/dotnet_light.svg");
+      else if (id == 8) $("#sqlserver").attr("src", "assets/icons/light/sqlserver_light.svg");
+      else if (id == 9) $("#eclipse").attr("src", "assets/icons/light/eclipse_light.svg");
+      else if (id == 10) $("#intellij").attr("src", "assets/icons/light/intellij_light.svg");
+      else if (id == 11) $("#androidstudio").attr("src", "assets/icons/light/androidstudio_light.svg");
+      else if (id == 12) $("#visualstudio").attr("src", "assets/icons/light/visualstudio_light.svg");
+      else if (id == 13) $("#visualstudiocode").attr("src", "assets/icons/light/visualstudiocode_light.svg");
+      else if (id == 14) $("#postman").attr("src", "assets/icons/light/postman_light.svg");
+      else if (id == 15) $("#git").attr("src", "assets/icons/light/git_light.svg");
+      else if (id == 16) $("#figma").attr("src", "assets/icons/light/figma_light.svg");
+      else if (id == 17) $("#photoshop").attr("src", "assets/icons/light/photoshop_light.svg");
    }
 }
 
 /** App graphics anim */
 function purple_graphics(id) {
    if (id == 1) {
-      $("#cp-image").css(
-         "background-image",
-         "url(/assets/images/prl/cp_prl.png)"
-      );
+      $("#cp-image").css("background-image", "url(/assets/images/prl/cp_prl.png)");
    } else if (id == 2) {
-      $("#ws-image").css(
-         "background-image",
-         "url(/assets/images/prl/ws_prl.png)"
-      );
+      $("#ws-image").css("background-image", "url(/assets/images/prl/ws_prl.png)");
    } else if (id == 3) {
-      $("#ss-image").css(
-         "background-image",
-         "url(/assets/images/prl/ss_prl.png)"
-      );
+      $("#ss-image").css("background-image", "url(/assets/images/prl/ss_prl.png)");
    } else if (id == 4) {
-      $("#mf-image").css(
-         "background-image",
-         "url(/assets/images/prl/mf_prl.png)"
-      );
+      $("#mf-image").css("background-image", "url(/assets/images/prl/mf_prl.png)");
    }
 }
 
 function color_graphics(id) {
    if (id == 1) {
-      $("#cp-image").css(
-         "background-image",
-         "url(/assets/images/color/cp_color.png)"
-      );
+      $("#cp-image").css("background-image", "url(/assets/images/color/cp_color.png)");
    } else if (id == 2) {
-      $("#ws-image").css(
-         "background-image",
-         "url(/assets/images/color/ws_color.png)"
-      );
+      $("#ws-image").css("background-image", "url(/assets/images/color/ws_color.png)");
    } else if (id == 3) {
-      $("#ss-image").css(
-         "background-image",
-         "url(/assets/images/color/ss_color.png)"
-      );
+      $("#ss-image").css("background-image", "url(/assets/images/color/ss_color.png)");
    } else if (id == 4) {
-      $("#mf-image").css(
-         "background-image",
-         "url(/assets/images/color/mf_color.png)"
-      );
+      $("#mf-image").css("background-image", "url(/assets/images/color/mf_color.png)");
    }
 }
 
