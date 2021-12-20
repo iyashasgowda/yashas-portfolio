@@ -15,6 +15,15 @@ const musify = "https://play.google.com/store/apps/details?id=com.ash.studios.mu
 let root = document.documentElement;
 let is_dark_mode = root.style.getPropertyValue("--is-dark-mode");
 
+/** Age calculation */
+const dob = new Date();
+dob.setDate(03);
+dob.setMonth(10);
+dob.setYear(1997);
+
+const age = Math.abs(Math.round((new Date().getTime() - dob.getTime()) / 1000 / (60 * 60 * 24) / 365.25));
+document.getElementById("age").innerHTML = age;
+
 /** Hide header on scroll */
 var previous = window.pageYOffset;
 window.onscroll = function () {
@@ -375,3 +384,5 @@ $("#header_menu").click(function () {
 $("#close-menu").click(function () {
    $("#left-menu").css("width", "0%");
 });
+
+
