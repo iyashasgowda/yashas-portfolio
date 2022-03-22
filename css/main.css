@@ -4212,8 +4212,8 @@ footer ul li img:hover {
             justify-content: center;
   }
   section:nth-child(4) .work-body .color-palette div .cp-holder .cp-back div ul li {
-    font-size: 0.5em;
-    margin: 0.3em;
+    font-size: 0.4em;
+    margin: 0.2em;
     padding: 0.6em 0.8em 0.4em 0.8em;
     border-radius: 1.6em;
     font-weight: var(--font-weight);
@@ -4320,8 +4320,8 @@ footer ul li img:hover {
             justify-content: center;
   }
   section:nth-child(4) .work-body .wallpaper-sh div .ws-holder .ws-back div ul li {
-    font-size: 0.5em;
-    margin: 0.3em;
+    font-size: 0.4em;
+    margin: 0.2em;
     padding: 0.6em 0.8em 0.4em 0.8em;
     border-radius: 1.6em;
     font-weight: var(--font-weight);
@@ -4422,8 +4422,8 @@ footer ul li img:hover {
             justify-content: center;
   }
   section:nth-child(4) .work-body .short-stories div .ss-holder .ss-back div ul li {
-    font-size: 0.5em;
-    margin: 0.3em;
+    font-size: 0.4em;
+    margin: 0.2em;
     padding: 0.6em 0.8em 0.4em 0.8em;
     border-radius: 1.6em;
     font-weight: var(--font-weight);
@@ -4530,8 +4530,8 @@ footer ul li img:hover {
             justify-content: center;
   }
   section:nth-child(4) .work-body .musify div .mf-holder .mf-back div ul li {
-    font-size: 0.5em;
-    margin: 0.3em;
+    font-size: 0.4em;
+    margin: 0.2em;
     padding: 0.6em 0.8em 0.4em 0.8em;
     border-radius: 1.6em;
     font-weight: var(--font-weight);
@@ -4942,7 +4942,7 @@ footer ul li img:hover {
   }
   section:nth-child(4) .work-body .color-palette div .cp-holder .cp-back div ul li {
     font-size: 0.2em;
-    margin: 0.8em;
+    margin: 0.4em;
     padding: 0.8em 1.1em 0.6em 1.1em;
     border-radius: 1.6em;
     font-weight: var(--font-weight);
@@ -5048,7 +5048,7 @@ footer ul li img:hover {
   }
   section:nth-child(4) .work-body .wallpaper-sh div .ws-holder .ws-back div ul li {
     font-size: 0.2em;
-    margin: 0.8em;
+    margin: 0.4em;
     padding: 0.8em 1.1em 0.6em 1.1em;
     border-radius: 1.6em;
     font-weight: var(--font-weight);
@@ -5148,7 +5148,7 @@ footer ul li img:hover {
   }
   section:nth-child(4) .work-body .short-stories div .ss-holder .ss-back div ul li {
     font-size: 0.2em;
-    margin: 0.8em;
+    margin: 0.4em;
     padding: 0.8em 1.1em 0.6em 1.1em;
     border-radius: 1.6em;
     font-weight: var(--font-weight);
@@ -5254,7 +5254,7 @@ footer ul li img:hover {
   }
   section:nth-child(4) .work-body .musify div .mf-holder .mf-back div ul li {
     font-size: 0.2em;
-    margin: 0.8em;
+    margin: 0.4em;
     padding: 0.8em 1.1em 0.6em 1.1em;
     border-radius: 1.6em;
     font-weight: var(--font-weight);
