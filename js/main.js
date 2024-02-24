@@ -17,7 +17,7 @@ let is_dark_mode = root.style.getPropertyValue("--is-dark-mode");
 
 /** Age calculation */
 const dob = new Date();
-dob.setDate(03);
+dob.setDate(0o3);
 dob.setMonth(10);
 dob.setYear(1997);
 
@@ -226,7 +226,7 @@ $("#go-top").click(function () {
 
 /** Download Resume */
 $("#resume").click(function () {
-   window.open("resume.pdf", "_blank");
+   window.open("https://1drv.ms/b/s!AubWMQGdKBFtmEW62iCAqIoOhyN9?e=BlnnbT", "_blank");
 });
 
 /** Goto app website */
