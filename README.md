@@ -4,7 +4,22 @@ This repository contains the source code for [iyashasgowda.com](https://iyashasg
 
 ## Info
 
-The site has been built with pure **HTML,** **CSS &** **JavaScript**. No pluggins or packages are used.
+The portfolio has been migrated to a React + Vite app while preserving the original design, sections, and asset structure.
+
+## Local development
+
+```bash
+export PATH=/home/iyashasgowda/.local/node/bin:$PATH
+npm install
+npm run dev
+```
+
+## Production build
+
+```bash
+export PATH=/home/iyashasgowda/.local/node/bin:$PATH
+npm run build
+```
 
 ## License
 
