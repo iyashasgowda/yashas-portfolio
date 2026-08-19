@@ -7,7 +7,7 @@ export const portfolioInfo = {
     facebook: 'https://facebook.com/iyashasgowda',
     instagram: 'https://instagram.com/iyashasgowda',
     github: 'https://github.com/iyashasgowda',
-    self: 'https://iyashasgowda.github.io/yashas-portfolio',
+    self: 'https://iyashasgowda.com',
     colorPalette: 'https://play.google.com/store/apps/details?id=com.blogspot.yashas003.colorpalette',
     wallpaperSh: 'https://play.google.com/store/apps/details?id=com.yashas003.wallpapersh',
     shortStories: 'https://play.google.com/store/apps/details?id=com.yashas003.shortstories',
