@@ -1,5 +1,5 @@
 {
-  "homepage": "https://iyashasgowda.com",
+  "homepage": "https://iyashasgowda.github.io/yashas-portfolio",
   "name": "yashas-portfolio",
   "version": "1.0.0",
   "private": true,
@@ -7,9 +7,7 @@
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "vite build",
-    "preview": "vite preview --host 0.0.0.0",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview --host 0.0.0.0"
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -18,7 +16,6 @@
   "devDependencies": {
     "@playwright/test": "^1.62.1",
     "@vitejs/plugin-react": "^6.0.5",
-    "gh-pages": "^6.3.0",
     "vite": "^8.2.1"
   }
 }

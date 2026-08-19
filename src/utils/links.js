@@ -6,6 +6,14 @@ export const openMailTo = (email) => {
     openExternalLink(`mailto:${email}`);
 };
 
+export const resolveAssetPath = (assetPath) => {
+    if (/^(?:https?:)?\/\//.test(assetPath) || assetPath.startsWith(import.meta.env.BASE_URL)) {
+        return assetPath;
+    }
+
+    return `${import.meta.env.BASE_URL}${assetPath.replace(/^\/+/, '')}`;
+};
+
 export const scrollToSection = (sectionId) => {
     const target = document.getElementById(sectionId);
     if (target) {
@@ -14,4 +22,4 @@ export const scrollToSection = (sectionId) => {
 };
 
 export const getThemeAsset = (darkAsset, lightAsset, isDarkMode) =>
-    isDarkMode ? lightAsset : darkAsset;
+    resolveAssetPath(isDarkMode ? lightAsset : darkAsset);

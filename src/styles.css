@@ -926,7 +926,7 @@ section:nth-child(4) .work-body .color-palette div .cp-holder .cp-front {
     border-radius: 2em;
     transition: 0.25s ease;
     filter: var(--drop-shadow);
-    background-image: url("/assets/images/prl/cp_prl.png");
+    background-image: url("../assets/images/prl/cp_prl.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1106,7 +1106,7 @@ section:nth-child(4) .work-body .wallpaper-sh div .ws-holder .ws-front {
     border-radius: 2em;
     transition: 0.25s ease;
     filter: var(--drop-shadow);
-    background-image: url("/assets/images/prl/ws_prl.png");
+    background-image: url("../assets/images/prl/ws_prl.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1290,7 +1290,7 @@ section:nth-child(4) .work-body .short-stories div .ss-holder .ss-front {
     border-radius: 2em;
     transition: 0.25s ease;
     filter: var(--drop-shadow);
-    background-image: url("/assets/images/prl/ss_prl.png");
+    background-image: url("../assets/images/prl/ss_prl.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1477,7 +1477,7 @@ section:nth-child(4) .work-body .musify div .mf-holder .mf-front {
     border-radius: 2em;
     transition: 0.25s ease;
     filter: var(--drop-shadow);
-    background-image: url("/assets/images/prl/mf_prl.png");
+    background-image: url("../assets/images/prl/mf_prl.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

@@ -1,3 +1,5 @@
+import {resolveAssetPath} from '../utils/links';
+
 export const portfolioInfo = {
     email: 'iyashasgowda@gmail.com',
     linkedin: 'https://linkedin.com/in/iyashasgowda',
@@ -5,7 +7,7 @@ export const portfolioInfo = {
     facebook: 'https://facebook.com/iyashasgowda',
     instagram: 'https://instagram.com/iyashasgowda',
     github: 'https://github.com/iyashasgowda',
-    self: 'https://iyashasgowda.com',
+    self: 'https://iyashasgowda.github.io/yashas-portfolio',
     colorPalette: 'https://play.google.com/store/apps/details?id=com.blogspot.yashas003.colorpalette',
     wallpaperSh: 'https://play.google.com/store/apps/details?id=com.yashas003.wallpapersh',
     shortStories: 'https://play.google.com/store/apps/details?id=com.yashas003.shortstories',
@@ -103,8 +105,8 @@ export const workItems = [
         detail: 'With this application, you can extract palettes from images, create a solid, gradient, and harmonious colors.',
         techStack: ['Palette', 'Picasso', 'Play Billing', 'Java', 'XML', 'Android Studio'],
         tags: ['#art', '#design', '#personalization', '#utility'],
-        image: '/assets/images/prl/cp_prl.png',
-        hoverImage: '/assets/images/color/cp_color.png',
+        image: resolveAssetPath('/assets/images/prl/cp_prl.png'),
+        hoverImage: resolveAssetPath('/assets/images/color/cp_color.png'),
         avatarImage: 'coloring',
         link: portfolioInfo.colorPalette,
     },
@@ -116,8 +118,8 @@ export const workItems = [
         detail: 'With this application, you can download the wallpapers or set them as a screen background directly.',
         techStack: ['Retrofit', 'Picasso', 'Pixabay API', 'Java', 'XML', 'Android Studio'],
         tags: ['#art', '#wallpaper', '#personalization', '#picture'],
-        image: '/assets/images/prl/ws_prl.png',
-        hoverImage: '/assets/images/color/ws_color.png',
+        image: resolveAssetPath('/assets/images/prl/ws_prl.png'),
+        hoverImage: resolveAssetPath('/assets/images/color/ws_color.png'),
         avatarImage: 'wallpaper',
         link: portfolioInfo.wallpaperSh,
     },
@@ -129,8 +131,8 @@ export const workItems = [
         detail: 'Uses Blogger CMS as a data source. All the stories are pulled through the API using the retrofit library.',
         techStack: ['Retrofit', 'Glide', 'Blogger API', 'Java', 'XML', 'Android Studio'],
         tags: ['#info', '#story', '#readability', '#entertainment'],
-        image: '/assets/images/prl/ss_prl.png',
-        hoverImage: '/assets/images/color/ss_color.png',
+        image: resolveAssetPath('/assets/images/prl/ss_prl.png'),
+        hoverImage: resolveAssetPath('/assets/images/color/ss_color.png'),
         avatarImage: 'stories',
         link: portfolioInfo.shortStories,
     },
@@ -142,22 +144,22 @@ export const workItems = [
         detail: 'Musify has many features like search, sort, shuffle, repeat, fast forward, manage playlists and categories.',
         techStack: ['Circular Seek', 'Glide', 'Palette', 'Java', 'XML', 'Android Studio'],
         tags: ['#music', '#audio', '#relax', '#song'],
-        image: '/assets/images/prl/mf_prl.png',
-        hoverImage: '/assets/images/color/mf_color.png',
+        image: resolveAssetPath('/assets/images/prl/mf_prl.png'),
+        hoverImage: resolveAssetPath('/assets/images/color/mf_color.png'),
         avatarImage: 'music',
         link: portfolioInfo.musify,
     },
 ];
 
 export const socialLinks = [
-    {id: 'github', href: portfolioInfo.github, darkAsset: '/assets/icons/dark/github.svg', lightAsset: '/assets/icons/light/github.svg'},
-    {id: 'linkedin', href: portfolioInfo.linkedin, darkAsset: '/assets/icons/dark/linkedin.svg', lightAsset: '/assets/icons/light/linkedin.svg'},
-    {id: 'twitter', href: portfolioInfo.twitter, darkAsset: '/assets/icons/dark/twitter.svg', lightAsset: '/assets/icons/light/twitter.svg'},
-    {id: 'instagram', href: portfolioInfo.instagram, darkAsset: '/assets/icons/dark/instagram.svg', lightAsset: '/assets/icons/light/instagram.svg'},
-    {id: 'facebook', href: portfolioInfo.facebook, darkAsset: '/assets/icons/dark/facebook.svg', lightAsset: '/assets/icons/light/facebook.svg'},
+    {id: 'github', href: portfolioInfo.github, darkAsset: resolveAssetPath('/assets/icons/dark/github.svg'), lightAsset: resolveAssetPath('/assets/icons/light/github.svg')},
+    {id: 'linkedin', href: portfolioInfo.linkedin, darkAsset: resolveAssetPath('/assets/icons/dark/linkedin.svg'), lightAsset: resolveAssetPath('/assets/icons/light/linkedin.svg')},
+    {id: 'twitter', href: portfolioInfo.twitter, darkAsset: resolveAssetPath('/assets/icons/dark/twitter.svg'), lightAsset: resolveAssetPath('/assets/icons/light/twitter.svg')},
+    {id: 'instagram', href: portfolioInfo.instagram, darkAsset: resolveAssetPath('/assets/icons/dark/instagram.svg'), lightAsset: resolveAssetPath('/assets/icons/light/instagram.svg')},
+    {id: 'facebook', href: portfolioInfo.facebook, darkAsset: resolveAssetPath('/assets/icons/dark/facebook.svg'), lightAsset: resolveAssetPath('/assets/icons/light/facebook.svg')},
 ];
 
 export const footerLinks = [
     ...socialLinks,
-    {id: 'gmail', href: `mailto:${portfolioInfo.email}`, darkAsset: '/assets/icons/dark/gmail.svg', lightAsset: '/assets/icons/light/gmail.svg'},
+    {id: 'gmail', href: `mailto:${portfolioInfo.email}`, darkAsset: resolveAssetPath('/assets/icons/dark/gmail.svg'), lightAsset: resolveAssetPath('/assets/icons/light/gmail.svg')},
 ];

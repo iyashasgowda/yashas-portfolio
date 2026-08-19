@@ -1,6 +1,6 @@
 # Yashas's Portfolio
 
-This repository contains the source code for [iyashasgowda.com](https://iyashasgowda.com)
+This repository contains the source code for Yashas's portfolio, deployed at [iyashasgowda.github.io/yashas-portfolio](https://iyashasgowda.github.io/yashas-portfolio).
 
 ## Info
 
@@ -20,6 +20,15 @@ npm run dev
 export PATH=/home/iyashasgowda/.local/node/bin:$PATH
 npm run build
 ```
+
+## Deploy to GitHub Pages
+
+```bash
+export PATH=/home/iyashasgowda/.local/node/bin:$PATH
+npm run build
+```
+
+The site is deployed by the GitHub Actions workflow in `.github/workflows/deploy-pages.yml` whenever code is pushed to `master`.
 
 ## License
 

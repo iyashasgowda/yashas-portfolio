@@ -1,6 +1,7 @@
 import {useState} from 'react';
 
 import {aboutTimeline} from '../../data/portfolioData';
+import {resolveAssetPath} from '../../utils/links';
 
 export function AboutSection({currentAge}) {
     const [isPortraitHovered, setIsPortraitHovered] = useState(false);
@@ -35,7 +36,7 @@ export function AboutSection({currentAge}) {
                             alt="me"
                             id="me"
                             width="420"
-                            src={isPortraitHovered ? '/assets/images/color/me_color.png' : '/assets/images/prl/me_prl.png'}
+                            src={resolveAssetPath(isPortraitHovered ? '/assets/images/color/me_color.png' : '/assets/images/prl/me_prl.png')}
                             onMouseEnter={() => setIsPortraitHovered(true)}
                             onMouseLeave={() => setIsPortraitHovered(false)}
                         />
