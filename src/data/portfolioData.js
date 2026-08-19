@@ -105,6 +105,7 @@ export const workItems = [
         tags: ['#art', '#design', '#personalization', '#utility'],
         image: '/assets/images/prl/cp_prl.png',
         hoverImage: '/assets/images/color/cp_color.png',
+        avatarImage: 'coloring',
         link: portfolioInfo.colorPalette,
     },
     {
@@ -117,6 +118,7 @@ export const workItems = [
         tags: ['#art', '#wallpaper', '#personalization', '#picture'],
         image: '/assets/images/prl/ws_prl.png',
         hoverImage: '/assets/images/color/ws_color.png',
+        avatarImage: 'wallpaper',
         link: portfolioInfo.wallpaperSh,
     },
     {
@@ -129,6 +131,7 @@ export const workItems = [
         tags: ['#info', '#story', '#readability', '#entertainment'],
         image: '/assets/images/prl/ss_prl.png',
         hoverImage: '/assets/images/color/ss_color.png',
+        avatarImage: 'stories',
         link: portfolioInfo.shortStories,
     },
     {
@@ -141,6 +144,7 @@ export const workItems = [
         tags: ['#music', '#audio', '#relax', '#song'],
         image: '/assets/images/prl/mf_prl.png',
         hoverImage: '/assets/images/color/mf_color.png',
+        avatarImage: 'music',
         link: portfolioInfo.musify,
     },
 ];

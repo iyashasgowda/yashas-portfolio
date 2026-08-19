@@ -6,7 +6,7 @@ export function Footer({isDarkMode}) {
         <footer>
             <p>
                 &copy; 2021 - Design & Developed by
-                <span id="copyright_name" onClick={() => openExternalLink(portfolioInfo.self)}>Yashas Gowda</span>
+                <span id="copyright_name" onClick={() => openExternalLink(portfolioInfo.self)}> Yashas Gowda</span>
             </p>
 
             <ul>

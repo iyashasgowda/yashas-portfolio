@@ -1,7 +1,7 @@
 import {navItems} from '../data/portfolioData';
 
 export function SidebarMenu({isDarkMode, menuOpen, onNavigate, onClose, onToggleTheme}) {
-    const navThemeText = isDarkMode ? 'Light Mode' : 'Dark Mode';
+    const navThemeText = isDarkMode ? 'Dark Mode' : 'Light Mode';
 
     return (
         <div className="left-menu" id="left-menu" style={{width: menuOpen ? '100%' : '0%'}}>

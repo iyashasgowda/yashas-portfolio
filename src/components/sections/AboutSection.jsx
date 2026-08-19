@@ -19,10 +19,7 @@ export function AboutSection({currentAge}) {
                                 <div className="icon"/>
                                 <div className="content">
                                     <h3>
-                                        {item.role}
-                                        <a href={item.companyUrl} target="_blank" rel="noreferrer">
-                                            @{item.company}
-                                        </a>
+                                        {item.role} <a href={item.companyUrl} target="_blank" rel="noreferrer">@{item.company}</a>
                                     </h3>
                                     <h5>{item.stack}</h5>
                                     <p>{item.period}</p>

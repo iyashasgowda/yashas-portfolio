@@ -23,9 +23,32 @@
     --full-opacity: 1;
     /** Box Shadows */
     --drop-shadow: drop-shadow(0 6px 3px rgba(0, 0, 0, var(--medium-opacity)));
-    --drop-shadow-hover: drop-shadow(0 0 0 rgba(black, 0));
+    --drop-shadow-hover: drop-shadow(0 0 0 rgba(0, 0, 0, 0));
 }
 
+@media (min-width: 2560px) {
+    :root {
+        font-size: 150%;
+    }
+
+    section {
+        width: 94%;
+    }
+
+    section:nth-of-type(2) .about-title,
+    section:nth-of-type(2) .about-body,
+    section:nth-child(3) .skills-title,
+    section:nth-child(3) .skills-body,
+    section:nth-child(4) .work-title,
+    section:nth-child(4) .work-body {
+        width: 84%;
+    }
+
+    section:nth-of-type(2) .about-body .description div:nth-child(1) img {
+        width: min(32vw, 680px);
+        max-width: 100%;
+    }
+}
 
 ::selection {
     background: rgba(var(--color-accent-rgb), var(--high-opacity));
@@ -139,7 +162,6 @@ header {
     width: 100vw;
     display: flex;
     align-items: center;
-    justify-content: center;
     backdrop-filter: blur(0.6em);
     justify-content: space-between;
     transition: var(--slow-transition);
@@ -331,7 +353,7 @@ section:nth-child(1) div div p:nth-of-type(2) {
 
 section:nth-child(1) div div button {
     font-size: 1.2em;
-    font-family: var(--font-family);
+    font-family: var(--font-family), serif;
     color: rgba(var(--color-accent-rgb), var(--medium-opacity));
     margin-top: 1.4em;
     letter-spacing: 0.04em;
@@ -368,7 +390,6 @@ section:nth-child(1) div img:hover {
 section:nth-of-type(2) {
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     justify-content: flex-start;
 }
@@ -400,7 +421,6 @@ section:nth-of-type(2) .about-body {
     width: 75%;
     display: flex;
     align-items: center;
-    justify-content: center;
     justify-content: space-between;
 }
 
@@ -513,7 +533,6 @@ section:nth-of-type(2) .about-body .description div:nth-child(2) p:nth-child(3) 
 section:nth-child(3) {
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     justify-content: flex-start;
 }
@@ -546,7 +565,6 @@ section:nth-child(3) .skills-body {
     margin-top: 2em;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     justify-content: flex-start;
 }
@@ -568,7 +586,6 @@ section:nth-child(3) .skills-body div:nth-of-type(1) div {
     height: 100%;
     width: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
     align-items: flex-start;
 }
@@ -690,7 +707,6 @@ section:nth-child(3) .skills-body div:nth-of-type(2) div {
     height: 100%;
     width: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
     align-items: flex-start;
 }
@@ -827,7 +843,6 @@ section:nth-child(4) {
     width: 85%;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     justify-content: flex-start;
 }
@@ -868,7 +883,6 @@ section:nth-child(4) .work-body .color-palette {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
     justify-content: flex-end;
 }
 
@@ -891,7 +905,6 @@ section:nth-child(4) .work-body .color-palette div {
     width: 70%;
     display: flex;
     align-items: center;
-    justify-content: center;
     justify-content: flex-start;
 }
 
@@ -1050,7 +1063,6 @@ section:nth-child(4) .work-body .wallpaper-sh {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
     justify-content: flex-start;
 }
 
@@ -1073,7 +1085,6 @@ section:nth-child(4) .work-body .wallpaper-sh div {
     width: 70%;
     display: flex;
     align-items: center;
-    justify-content: center;
     justify-content: flex-end;
 }
 
@@ -1152,7 +1163,6 @@ section:nth-child(4) .work-body .wallpaper-sh div .ws-holder .ws-back article {
     align-self: flex-start;
     color: var(--color-primary-hex);
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
     align-items: flex-end;
@@ -1237,7 +1247,6 @@ section:nth-child(4) .work-body .short-stories {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
     justify-content: flex-end;
 }
 
@@ -1260,7 +1269,6 @@ section:nth-child(4) .work-body .short-stories div {
     width: 70%;
     display: flex;
     align-items: center;
-    justify-content: center;
     justify-content: flex-start;
 }
 
@@ -1426,7 +1434,6 @@ section:nth-child(4) .work-body .musify {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
     justify-content: flex-start;
 }
 
@@ -1449,7 +1456,6 @@ section:nth-child(4) .work-body .musify div {
     width: 70%;
     display: flex;
     align-items: center;
-    justify-content: center;
     justify-content: flex-end;
 }
 
@@ -1528,7 +1534,6 @@ section:nth-child(4) .work-body .musify div .mf-holder .mf-back article {
     align-self: flex-start;
     color: var(--color-primary-hex);
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
     align-items: flex-end;
@@ -1638,7 +1643,7 @@ section:nth-child(5) p {
 
 section:nth-child(5) button {
     font-size: 1.2em;
-    font-family: var(--font-family);
+    font-family: var(--font-family), serif;
     color: rgba(var(--color-accent-rgb), var(--medium-opacity));
     margin-top: 1.4em;
     letter-spacing: 0.04em;
@@ -2186,8 +2191,7 @@ footer ul li img:hover {
     section:nth-child(1) div img {
         height: 36%;
         width: auto;
-        margin: 0;
-        margin-top: 4em;
+        margin: 4em 0 0;
         order: 1;
     }
 
@@ -2276,9 +2280,8 @@ footer ul li img:hover {
     }
 
     section:nth-child(3) .skills-body div:nth-of-type(1) div article:hover div p {
-        margin: 0;
         font-size: 0.9em;
-        margin-top: 0.6em;
+        margin: 0.6em 0 0;
     }
 
     section:nth-child(3) .skills-body div:nth-of-type(1) div article:hover ~ article {
@@ -4880,4 +4883,3 @@ footer ul li img:hover {
         order: 1;
     }
 }
-

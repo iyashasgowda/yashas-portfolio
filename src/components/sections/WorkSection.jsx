@@ -1,5 +1,5 @@
 import {workItems} from '../../data/portfolioData';
-import {getThemeAsset, openExternalLink} from '../../utils/links';
+import {openExternalLink} from '../../utils/links';
 
 export function WorkSection({isDarkMode}) {
     return (
@@ -26,11 +26,8 @@ export function WorkSection({isDarkMode}) {
                                 ? 'ss'
                                 : 'mf';
 
-                    const asset = getThemeAsset(
-                        index % 2 === 0 ? '/assets/images/dark/coloring_dark.png' : '/assets/images/dark/wallpaper_dark.png',
-                        index % 2 === 0 ? '/assets/images/light/coloring_light.png' : '/assets/images/light/wallpaper_light.png',
-                        isDarkMode,
-                    );
+                    const themeVariant = isDarkMode ? 'dark' : 'light';
+                    const asset = `/assets/images/${themeVariant}/${item.avatarImage}_${themeVariant}.png`;
 
                     const tagPosition = index % 2 === 0 ? 'tag-right' : 'tag-left';
 

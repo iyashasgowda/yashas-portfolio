@@ -1,7 +1,7 @@
 import {useEffect, useState} from 'react';
 
-export function usePortfolioTheme(initialMode = true) {
-    const [isDarkMode, setIsDarkMode] = useState(initialMode ?? true);
+export function usePortfolioTheme(initialMode = false) {
+    const [isDarkMode, setIsDarkMode] = useState(initialMode ?? false);
 
     useEffect(() => {
         const root = document.documentElement;
