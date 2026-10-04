@@ -1697,8 +1697,9 @@ section:nth-child(4) .work-item-card .work-card-content {
 
 section:nth-child(4) .work-item-card .work-period {
     font-size: 0.8em;
-    color: rgba(255, 255, 255, 1);
-    background: rgba(0, 0, 0, 0.6);
+    color: rgba(var(--color-accent-rgb), var(--high-opacity));
+    background: linear-gradient(135deg, rgba(var(--color-primary-rgb), 1), rgba(var(--color-primary-rgb), 0.8));
+    border: 1px solid rgba(var(--color-accent-rgb), 0.2);
     backdrop-filter: blur(8px);
     padding: 0.5em 0.8em;
     border-radius: 0.7em;
