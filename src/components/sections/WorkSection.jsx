@@ -37,8 +37,6 @@ export function WorkSection() {
                                 </div>
                             )}
                             
-                            <p className="work-detail">{item.detail}</p>
-                            
                             <div className="work-tech-stack">
                                 {item.techStack.map((tech) => (
                                     <span key={tech} className="tech-tag">{tech}</span>

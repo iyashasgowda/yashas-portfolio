@@ -1641,7 +1641,7 @@ section:nth-child(4) .work-item-card:hover {
 section:nth-child(4) .work-item-card .work-card-image-wrapper {
     position: relative;
     width: 100%;
-    height: 180px;
+    height: auto;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -1697,9 +1697,10 @@ section:nth-child(4) .work-item-card .work-card-content {
 
 section:nth-child(4) .work-item-card .work-period {
     font-size: 0.8em;
-    color: rgba(var(--color-accent-rgb), var(--high-opacity));
-    background: linear-gradient(135deg, rgba(var(--color-accent-rgb), 0.25), rgba(var(--color-accent-rgb), 0.1));
-    padding: 0.5em 0.75em;
+    color: rgba(255, 255, 255, 1);
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    padding: 0.5em 0.8em;
     border-radius: 0.7em;
     font-weight: 600;
     letter-spacing: 0.06em;
@@ -1729,10 +1730,10 @@ section:nth-child(4) .work-item-card .work-description {
 }
 
 section:nth-child(4) .work-item-card .work-detail {
-    font-size: 0.95em;
+    font-size: 0.7em;
     color: rgba(var(--color-accent-rgb), var(--medium-opacity));
     margin: 0;
-    line-height: 1.6em;
+    line-height: 1.4em;
 }
 
 section:nth-child(4) .work-item-card .work-highlights {
