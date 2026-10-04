@@ -103,7 +103,7 @@ export const workItems = [
     {
         id: 'color-palette',
         title: 'Color Palette',
-        date: 'v66',
+        date: 'v3.4.0',
         description: 'Simple tool to create custom colors, browse, extract, and save gradients.',
         techStack: ['Android', 'Java', 'Material Design', 'Image Processing'],
         avatarImage: 'colorpalette',
@@ -115,7 +115,7 @@ export const workItems = [
     {
         id: 'mounaraaga',
         title: 'Mounaraaga',
-        date: 'v12',
+        date: 'v1.0.0-beta11',
         description: 'Relive the Golden Era of Kannada Cinema through comprehensive music streaming.',
         techStack: ['Android', 'Java', 'Music Streaming', 'Kannada Cinema'],
         avatarImage: 'mounaraaga',
@@ -127,7 +127,7 @@ export const workItems = [
     {
         id: 'nesscoloura',
         title: 'Nesscoloura - An Art Museum',
-        date: 'v56',
+        date: 'v1.5.0',
         description: 'Share & discover art. Connect with artists worldwide. Inspire creativity.',
         techStack: ['Android', 'Java', 'Social Networking', 'Community'],
         avatarImage: 'nesscoloura',
@@ -139,7 +139,7 @@ export const workItems = [
     {
         id: 'short-stories',
         title: 'Short Stories',
-        date: 'v13',
+        date: 'v2.1.0',
         description: 'We tell ourselves stories in order to live.',
         techStack: ['Android', 'Java', 'Material Design', 'Content Management'],
         avatarImage: 'shortstories',
@@ -151,7 +151,7 @@ export const workItems = [
     {
         id: 'wallpaper-sh',
         title: 'Wallpaper.sh',
-        date: 'v12',
+        date: 'v1.7.0',
         description: 'Cool & beautiful wallpapers for every device.',
         techStack: ['Android', 'Java', 'Material Design', 'API Integration'],
         avatarImage: 'wallpapersh',
