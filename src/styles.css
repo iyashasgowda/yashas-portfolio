@@ -1705,7 +1705,6 @@ section:nth-child(4) .work-item-card .work-period {
     border-radius: 0.7em;
     font-weight: 600;
     letter-spacing: 0.06em;
-    text-transform: uppercase;
     display: inline-block;
     width: fit-content;
 }
