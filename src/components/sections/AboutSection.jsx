@@ -44,14 +44,14 @@ export function AboutSection({currentAge}) {
 
                     <div>
                         <p>
-                            I'm a <span id="age">{currentAge}</span>-year-old guy who's obsessed with coding. It all started when I was 20 years old. I wrote the first
-                            problem-solving program in my 3rd-year degree. Later it became a practice of writing small algorithms and code snippets. After the learning phase, made
-                            use of what I learned. So started to develop small mobile applications like calculator, task manager, audio recorder, flashlight..,
+                            I'm a <span id="age">{currentAge}</span>-year-old full-stack developer and infrastructure engineer. My journey started when I was 20, writing algorithms and building mobile apps. Today, I'm focused on building <strong>high-performance, scalable backend systems</strong> that power real-world applications.
                         </p>
 
-                        <p>Later this became an obsession that led me to choose my profession as a software developer despite having a degree in ECE Specialization.</p>
+                        <p>Currently at <strong>Shell Recharge Solutions</strong>, I work on enterprise-scale platforms handling millions of transactions.</p>
 
-                        <p>After joining an organization there were no limits to my learning. I learned web development along with UI designing.</p>
+                        <p><strong>What I build today:</strong> Distributed microservices in Java & Go, containerized with Docker, orchestrated at scale. Deep expertise in real-time systems (Kafka, Redis), database optimization (MySQL), and infrastructure automation. I design systems that are fast, reliable, and built to scale.</p>
+
+                        <p>If you need someone to architect performant backend systems, optimize infrastructure, or lead full-stack development—<strong>you're in the right place.</strong></p>
                     </div>
                 </div>
             </div>

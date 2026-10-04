@@ -8,9 +8,9 @@ export function IntroSection({isDarkMode}) {
                 <div>
                     <p>Hi, my name is</p>
                     <h1>Yashas Gowda</h1>
-                    <p>A software enthusiast. I design & develop web applications & native android applications.</p>
+                    <p>Backend architect & full-stack engineer. I build high-performance microservices, scalable infrastructure, and production-grade systems at scale.</p>
                     <button id="resume" type="button" onClick={() => openExternalLink(portfolioInfo.resume)}>
-                        Resume
+                        View Resume
                     </button>
                 </div>
 
