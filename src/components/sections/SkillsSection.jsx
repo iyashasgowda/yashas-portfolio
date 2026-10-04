@@ -20,7 +20,6 @@ const skillIconMap = {
     kafka: {dark: '/assets/icons/dark/kafka_dark.svg', light: '/assets/icons/light/kafka_light.svg'},
     aws: {dark: '/assets/icons/dark/aws_dark.svg', light: '/assets/icons/light/aws_light.svg'},
     linux: {dark: '/assets/icons/dark/linux_dark.svg', light: '/assets/icons/light/linux_light.svg'},
-    eclipse: {dark: '/assets/icons/dark/eclipse_dark.svg', light: '/assets/icons/light/eclipse_light.svg'},
     intellij: {dark: '/assets/icons/dark/intellij_dark.svg', light: '/assets/icons/light/intellij_light.svg'},
     visualstudiocode: {dark: '/assets/icons/dark/visualstudiocode_dark.svg', light: '/assets/icons/light/visualstudiocode_light.svg'},
     postman: {dark: '/assets/icons/dark/postman_dark.svg', light: '/assets/icons/light/postman_light.svg'},
